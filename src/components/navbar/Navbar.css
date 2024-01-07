@@ -1,0 +1,43 @@
+.dropdown-menu[data-bs-popper] {
+    left: -105px;
+}
+.bg-body-tertiary {
+    width: 100%;
+    transition: background-color 0.4s ease-out;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+}
+.nav-link {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+.offcanvas {
+    background-color: #ffc700 !important;
+}
+
+.navbar-toggler,
+.btn-close {
+    border: none !important
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: 0 0 5px 0px #fff !important;
+}
+
+.container-fluid img {
+    width: 60px;
+}
+
+@media (min-width: 576px) {
+    .navbar-expand-sm .offcanvas .offcanvas-body {
+        justify-content: end;
+    }
+}

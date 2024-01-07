@@ -1,0 +1,42 @@
+.aboutme {
+    width: 100%;
+    height: 100%;
+}
+
+.fondoAbout {
+    height: 100%;
+    background-color: #fff;
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    /* background: linear-gradient(159.5deg, #fff 50%, #1ABC9C 50%) */
+    background-image: url(../../assets/img/fondoAbout5.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contentAbout {
+    padding: 3%;
+    height: 100%;
+    background-color: #ffffff69;
+}
+
+.card {
+    background-color: #ffffffcf;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.card-header {
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    /* .aboutme {
+        height: 100vh;
+    } */
+}
+@media (max-width: 768px) {
+    .imgAbout img {
+        display: none;
+    }
+}

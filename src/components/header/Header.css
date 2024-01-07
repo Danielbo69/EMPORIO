@@ -1,0 +1,23 @@
+.header {
+    background:  #ffc700;
+}
+
+.fondoHeader {
+    min-height: 100vh;
+    background-image: url('../../assets/img/fondo7.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    
+}
+
+.contentHeader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #00000091;
+}
