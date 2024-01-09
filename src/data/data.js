@@ -1,5 +1,3 @@
-import ImageAbout from "../assets/img/mapa-chile-ubi.png";
-
 export const infoEmpresa = [
   {
     description:
@@ -8,7 +6,21 @@ export const infoEmpresa = [
       "“Ser el laboratorio óptico líder en innovación y tecnología, comprometido con la responsabilidad en la satisfacción de las necesidades visuales de nuestros clientes, aportando al desarrollo de soluciones ópticas de vanguardia.”",
     mision:
       "“Nuestra misión es brindar servicios ópticos de alta calidad mediante tecnología avanzada, con un compromiso sólido hacia la responsabilidad social y el desarrollo tecnológico en pro del bienestar visual de nuestros clientes y el entorno.”",
-    img: ImageAbout,
+    ubication: [
+      {
+        title: 'MONEDA 772',
+        description: 'Galerias nacionales local 315 A'
+      },
+      {
+        title: 'MACIVER 180',
+        description: 'Piso 3 oficina 103'
+      },
+      {
+        title: 'Puente Alto',
+        description: 'pendiente información'
+      }
+    ],
+    imgCentral: '',
   },
 ];
 
@@ -44,6 +56,7 @@ export const services = [
   {
     id: 5,
     title: "SERVICIO DE PRISMA",
-    description: "Un prisma en los lentes oftálmicos es un dispositivo óptico que desvía la luz en diferentes direcciones. Se utiliza en la corrección de problemas de visión relacionados con la desviación ocular, como el estrabismo. Los prismas se incorporan en los lentes oftálmicos para ayudar a alinear los ojos y mejorar la visión binocular.",
+    description:
+      "Un prisma en los lentes oftálmicos es un dispositivo óptico que desvía la luz en diferentes direcciones. Se utiliza en la corrección de problemas de visión relacionados con la desviación ocular, como el estrabismo. Los prismas se incorporan en los lentes oftálmicos para ayudar a alinear los ojos y mejorar la visión binocular.",
   },
 ];
