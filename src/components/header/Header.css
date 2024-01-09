@@ -1,5 +1,5 @@
 .header {
-    background:  #ffc700;
+    /* background-color:  transparent; */
 }
 
 .fondoHeader {
@@ -18,6 +18,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     background-color: #00000091;
 }

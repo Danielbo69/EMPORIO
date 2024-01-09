@@ -1,42 +1,83 @@
-.aboutme {
-    width: 100%;
-    height: 100%;
+.img {
+  grid-area: img;
 }
 
-.fondoAbout {
-    height: 100%;
-    background-color: #fff;
-    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
-    /* background: linear-gradient(159.5deg, #fff 50%, #1ABC9C 50%) */
-    background-image: url(../../assets/img/fondoAbout5.jpg);
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+.containerAbout {
+  display: grid;
+  /* grid-template-columns: 2.1fr 0.9fr; */
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 1px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "info";
+  /* grid-template-areas: "info img"; */
+
+  box-shadow: -2px 8px 18px 0px rgba(0, 0, 0, 0.14);
+  background-color: #0000005e;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.contentAbout {
-    padding: 3%;
-    height: 100%;
-    background-color: #ffffff69;
+.containerAbout,
+.description,
+.mision-and-vision {
+  text-align: justify;
 }
 
-.card {
-    background-color: #ffffffcf;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+.info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "title-and-description"
+    "mision-and-vision";
+  grid-area: info;
 }
 
-.card-header {
-    background-color: transparent;
+.description {
+  grid-area: title-and-description;
+}
+
+.mision-and-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.1fr;
+  gap: 1px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "mision vision";
+  grid-area: mision-and-vision;
+}
+
+.mision {
+  grid-area: mision;
+  padding: 10px;
+}
+
+.vision {
+  grid-area: vision;
+  padding: 10px;
 }
 
 @media (min-width: 768px) {
-    /* .aboutme {
+  /* .aboutme {
         height: 100vh;
     } */
 }
 @media (max-width: 768px) {
-    .imgAbout img {
-        display: none;
-    }
+  .containerAbout {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "info";
+  }
+  .mision-and-vision {
+    grid-template-columns: 1.1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "mision"
+      "vision";
+  }
 }

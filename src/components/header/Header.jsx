@@ -1,11 +1,10 @@
 import "./Header.css";
 import LogoEmporio from "../../assets/img/EMPORIUM LOGO.png";
-import NavMenu from "../navbar/Navbar";
 
 function Header() {
   return (
     <>
-    <NavMenu />
+    
       <div className="header">
         <div className="fondoHeader">
           <div className="contentHeader">

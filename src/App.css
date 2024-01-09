@@ -1,34 +1,42 @@
 .app {
-    margin: 0px;
-    padding: 0px;
+  height: 100%;
+  /* background-color: #000000b4; */
+  /* background: linear-gradient(0deg, rgb(0 0 0 / 43%) 8%, rgb(255 199 0 / 55%) 100%) */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgb(255 199 0 / 15%) 8%,
+    rgb(0 0 0 / 50%) 100%
+  );
+}
+
+.fondoApp {
+  background-image: url("./assets//img/fondo-Empo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
 }
 
 .row {
-    margin: 0px !important;
+  margin: 0px !important;
 }
-
-@keyframes girar {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 
 /*Custom Scrollbar*/
 
 body::-webkit-scrollbar {
-    width: 13px;
+  width: 13px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #969696;
-    /* background: rgb(255, 199, 0); */
+  background-color: #969696;
+  /* background: rgb(255, 199, 0); */
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: #969696b9;
-    /* background: rgba(255, 200, 0, 0.805); */
+  background-color: #969696b9;
+  /* background: rgba(255, 200, 0, 0.805); */
 }

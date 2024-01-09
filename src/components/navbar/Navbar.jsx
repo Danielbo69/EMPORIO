@@ -2,45 +2,36 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "./Navbar.css";
-import ImgLogo from '../../assets/img/LOGO BLANCO.png';
+import ImgLogo from "../../assets/img/LOGO BLANCO.png";
+import ImgLogoName from "../../assets/img/EMPORIUM LOGO.png";
 
 function NavMenu() {
   return (
     <>
-      <Navbar expand="sm" className="bg-body-tertiary">
+      <Navbar expand="lg" className="bg-body-tertiary navbar-dark">
         <Container fluid>
           <Navbar.Brand href="#">
             <img src={ImgLogo} alt={ImgLogo} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
+          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
           <Navbar.Offcanvas
-            id={`offcanvasNavbar-expand-sm`}
-            aria-labelledby={`offcanvasNavbarLabel-expand-sm`}
+            id={`offcanvasNavbar-expand-lg`}
+            aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
             placement="end"
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-sm`}>
-                Offcanvas
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
+                <img style={{width: 200}} src={ImgLogoName} alt={ImgLogoName} />
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link>Quienes Somos</Nav.Link>
                 <Nav.Link>Lentes</Nav.Link>
-                <NavDropdown
-                  title="Servicios"
-                  id={`offcanvasNavbarDropdown-expand-sm`}
-                >
-                  <NavDropdown.Item>Laboratorio Optico</NavDropdown.Item>
-                  <NavDropdown.Item>Servicio de Montaje</NavDropdown.Item>
-                  <NavDropdown.Item>Servicio de Stock</NavDropdown.Item>
-                  <NavDropdown.Item>Clarity Vision</NavDropdown.Item>
-                  <NavDropdown.Item>Teñido Solido o Degrade</NavDropdown.Item>
-                  <NavDropdown.Item>Servicio de Prisma</NavDropdown.Item>
-                </NavDropdown>
+                <Nav.Link>Servicios</Nav.Link>
+                <Nav.Link>Encuentranos</Nav.Link>
+                <Nav.Link>Contacto</Nav.Link>
               </Nav>
               {/* <Form className="d-flex">
                   <Form.Control
