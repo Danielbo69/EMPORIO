@@ -3,6 +3,7 @@ import "./Servicios.css";
 import Card from "./card/Card";
 import { services } from "../../data/data";
 import { useNavigate } from "react-router-dom";
+import { MdMiscellaneousServices } from "react-icons/md";
 
 function Servicios() {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ function Servicios() {
   return (
     <Container>
       <div className="services">
-        <h1 className="mb-4">Nuestros Servicios</h1>
+        <h1 className="mb-4"> Nuestros Servicios</h1>
         <Card services={services} onPressServices={onPressServices} />
       </div>
     </Container>

@@ -1,3 +1,5 @@
+import ImgCenter from '../assets/img/Black & White.png'
+
 export const infoEmpresa = [
   {
     description:
@@ -20,7 +22,7 @@ export const infoEmpresa = [
         description: 'pendiente información'
       }
     ],
-    imgCentral: '',
+    imgCentral: ImgCenter,
   },
 ];
 
