@@ -1,42 +1,51 @@
-function Whatsapp() {
-  window.callbellSettings = {
-    token: "QNWYJLT26PKSPJMa5QoWwxBo",
-  };
-  return (function () {
-    var w = window;
-    var ic = w.callbell;
-    if (typeof ic === "function") {
-      ic("reattach_activator");
-      // eslint-disable-next-line no-undef
-      ic("update", callbellSettings);
-    } else {
-      var d = document;
-      var i = function () {
-        i.c(arguments);
-      };
-      i.q = [];
-      i.c = function (args) {
-        i.q.push(args);
-      };
-      w.Callbell = i;
-      var l = function () {
-        var s = d.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
-        s.src =
-          "https://dash.callbell.eu/include/" +
-          window.callbellSettings.token +
-          ".js";
-        var x = d.getElementsByTagName("script")[0];
-        x.parentNode.insertBefore(s, x);
-      };
-      if (w.attachEvent) {
-        w.attachEvent("onload", l);
-      } else {
-        w.addEventListener("load", l, false);
-      }
-    }
-  })();
-}
+import { useState, useRef, useEffect } from "react";
+import "./Whatsapp.css";
+import { IoLogoWhatsapp, IoIosClose } from "react-icons/io";
+import Tooltip from "react-bootstrap/Tooltip";
+import Overlay from "react-bootstrap/Overlay";
 
+function Whatsapp() {
+  const [showTooltip, setShowTooltip] = useState(false);
+  const target = useRef(null);
+
+  useEffect(() => {
+    if (!showTooltip) {
+      setShowTooltip(!showTooltip);
+    }
+  }, []);
+
+  return (
+    <>
+      <a
+        ref={target}
+        href="https://api.whatsapp.com/send?phone=5661017123"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn-wsp"
+      >
+        <IoLogoWhatsapp />
+      </a>
+      <Overlay
+        target={target.current}
+        show={showTooltip == true}
+        placement="left"
+      >
+        {(props) => (
+          <Tooltip id="overlay-example" {...props}>
+            <div className="d-flex">
+              <span style={{ textAlign: "left" }}>
+                ¡Escribenos para más información!
+              </span>
+              <div className="icon">
+                <span onClick={() => setShowTooltip(!showTooltip)}>
+                  <IoIosClose />{" "}
+                </span>
+              </div>
+            </div>
+          </Tooltip>
+        )}
+      </Overlay>
+    </>
+  );
+}
 export default Whatsapp;

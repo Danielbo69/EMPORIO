@@ -16,7 +16,7 @@ function AboutMe({ infoEmpresa }) {
       <div className="contentAbout">
         {infoEmpresa.map((info, index) => (
           <div className="row aboutus" key={index}>
-            <div className="col-md nuestrasOficinas mx-3">
+            <div className="col-md nuestrasOficinas">
               <div className="infoUbicacion">
                 <div className="titleUbiHeader mb-2">
                   <h5 id="title" style={colorTitle}>
