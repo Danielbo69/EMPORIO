@@ -45,7 +45,7 @@ function AboutMe({ infoEmpresa }) {
             <div className="col-md imagen">
               <div className="img">
                 <img
-                  className="d-flex w-100 h-100"
+                  className="d-flex w-100"
                   src={info.imgCentral}
                   alt={info.imgCentral}
                 />

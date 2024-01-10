@@ -146,6 +146,13 @@
 
 .img {
   grid-area: img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen img {
+  height: 100%;
 }
 
 .infoAbout {
@@ -260,7 +267,8 @@
     grid-area: 3;
   }
   .imagen img {
-    height: auto;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px;
     width: 100% !important;
   }
 
