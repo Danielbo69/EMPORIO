@@ -5,7 +5,7 @@ function Spinner() {
     const contenedor = document.getElementById("contenedor_loader");
     contenedor.style.visibility = "hidden";
     contenedor.style.opacity = "0";
-  }, 3000);
+  }, 5000);
   return (
     // Símbolo de Carga
     <div id="contenedor_loader">

@@ -10,28 +10,29 @@ import ImgLogoName from "../../assets/img/EMPORIUM LOGO.png";
 function NavMenu() {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary navbar-dark">
+      <Navbar expand="xxl" className="bg-body-tertiary navbar-dark">
         <Container fluid>
           <Navbar.Brand href="#">
             <img src={ImgLogo} alt={ImgLogo} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
+          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} />
           <Navbar.Offcanvas
-            id={`offcanvasNavbar-expand-lg`}
-            aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
+            id={`offcanvasNavbar-expand-xxl`}
+            aria-labelledby={`offcanvasNavbarLabel-expand-xxl`}
             placement="end"
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xxl`}>
                 <img style={{width: 200}} src={ImgLogoName} alt={ImgLogoName} />
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link>Lentes</Nav.Link>
-                <Nav.Link>Servicios</Nav.Link>
-                <Nav.Link>Encuentranos</Nav.Link>
-                <Nav.Link>Contacto</Nav.Link>
+                <Nav.Link href="/quienesSomos">QUIENES SOMOS</Nav.Link>
+                <Nav.Link href="/servicios/0">SERVICIOS</Nav.Link>
+                <Nav.Link href="/catalogo">CATALOGO</Nav.Link>
+                <Nav.Link href="/lentes">LENTES</Nav.Link>
+                <Nav.Link href="/contacto">CONTACTO</Nav.Link>
               </Nav>
               {/* <Form className="d-flex">
                   <Form.Control
