@@ -4,6 +4,7 @@ import Container from "../../components/container/Container";
 import Buttons from "../../components/buttons/Buttons";
 import titleAbout from "../../assets/img/Title.png";
 import whoareTitle from "../../assets/img/Body Text.png";
+import imgUbi from "../../assets/img/Duplicate.png"
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 
@@ -16,7 +17,7 @@ function AboutMe({ infoEmpresa }) {
       <div className="contentAbout">
         {infoEmpresa.map((info, index) => (
           <div className="row aboutus" key={index}>
-            <div className="col-md nuestrasOficinas">
+            <div className="col col-md nuestrasOficinas">
               <div className="infoUbicacion">
                 <div className="titleUbiHeader mb-2">
                   <h5 id="title" style={colorTitle}>
@@ -40,7 +41,9 @@ function AboutMe({ infoEmpresa }) {
                   </div>
                 ))}
               </div>
-              <div className="col-md imgUbicacion"></div>
+              <div className="col-md imgUbicacion">
+                <img src={imgUbi} alt={imgUbi} />
+              </div>
             </div>
             <div className="col-md imagen">
               <div className="img">
@@ -51,7 +54,7 @@ function AboutMe({ infoEmpresa }) {
                 />
               </div>
             </div>
-            <div className="col-md infoAbout mx-2">
+            <div className="infoAbout col-md mx-lg-2">
               <div className="title">
                 <img
                   className="w-100 h-auto"
@@ -72,27 +75,6 @@ function AboutMe({ infoEmpresa }) {
               </div>
             </div>
           </div>
-          // <div className="containerAbout" key={index}>
-          //   <div className="info">
-          //     <div className="description">
-          //       <span className="mb-5 h5" style={colorTitle}>
-          //         Sobre Nosotros
-          //       </span>
-          //       <h1 className="text-white text-left mb-3">¿Quienes Somos?</h1>
-          //       <p className="text-white">{info.description}</p>
-          //     </div>
-          //     <div className="mision-and-vision">
-          //       <div className="mision m-1">
-          //         <h5 style={colorTitle}>Misión</h5>
-          //         <p className="text-white">{info.mision}</p>
-          //       </div>
-          //       <div className="vision m-1">
-          //         <h5 style={colorTitle}>Visión</h5>
-          //         <p className="text-white">{info.vision}</p>
-          //       </div>
-          //     </div>
-          //   </div>
-          // </div>
         ))}
       </div>
     </Container>

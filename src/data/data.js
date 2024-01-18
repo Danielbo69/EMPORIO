@@ -18,7 +18,7 @@ export const infoEmpresa = [
         description: 'Piso 3 oficina 103'
       },
       {
-        title: 'Puente Alto',
+        title: 'PUENTE ALTO',
         description: 'pendiente información'
       }
     ],

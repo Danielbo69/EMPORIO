@@ -23,7 +23,7 @@ function NavMenu() {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xxl`}>
-                <img style={{width: 200}} src={ImgLogoName} alt={ImgLogoName} />
+                {/* <img style={{width: 200}} src={ImgLogoName} alt={ImgLogoName} /> */}
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>

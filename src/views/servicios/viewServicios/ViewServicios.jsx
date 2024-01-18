@@ -104,7 +104,6 @@ function ViewServicios() {
           </div>
           <div className="buttonsContent d-flex justify-content-end col">
             <button className="btn btn-primary m-1">más información</button>
-            <button className="btn btn-success m-1">Comprar</button>
           </div>
         </div>
       </div>
