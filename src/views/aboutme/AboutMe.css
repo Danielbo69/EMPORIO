@@ -158,6 +158,23 @@
   text-align: justify;
 }
 
+.modal-content {
+  color: #fff;
+  background-color: #212529;
+}
+
+.modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-close {
+  /* --bs-btn-close-bg: url('../../assets/img/close.svg'); */
+  background-image: url('../../assets/img/close.svg');
+  font-size: 25px;
+}
+
 @media (min-width: 768px) {
   /* .aboutme {
         height: 100vh;

@@ -1,22 +1,56 @@
 /* eslint-disable react/prop-types */
 import "./AboutMe.css";
+import { useState } from "react";
 import Container from "../../components/container/Container";
 import Buttons from "../../components/buttons/Buttons";
 import titleAbout from "../../assets/img/Title.png";
 import whoareTitle from "../../assets/img/Body Text.png";
-import imgUbi from "../../assets/img/Duplicate.png"
+import imgUbi from "../../assets/img/Duplicate.png";
 import { FaMapMarkerAlt } from "react-icons/fa";
-
+import Modal from "react-bootstrap/Modal";
 
 function AboutMe({ infoEmpresa }) {
+  const [show, setShow] = useState(false);
+
   const colorTitle = {
     color: "#ffc700",
   };
+
+  const MyModal = ({ info }) => {
+    return (
+      <>
+        <Modal
+          show={show}
+          onHide={() => setShow(false)}
+          dialogClassName="modal-90w"
+          aria-labelledby="example-custom-modal-styling-title"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id="example-custom-modal-styling-title">
+              SOBRE NOSOTROS
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <div className="col">
+              <strong style={colorTitle}>MISIÓN</strong>
+              <p>{info.mision}</p>
+            </div>
+            <br />
+            <div className="col">
+              <strong style={colorTitle}>VISIÓN</strong> <p>{info.vision}</p>
+            </div>
+          </Modal.Body>
+        </Modal>
+      </>
+    );
+  };
+
   return (
     <Container>
       <div className="contentAbout">
         {infoEmpresa.map((info, index) => (
           <div className="row aboutus" key={index}>
+            {show ? <MyModal info={info} /> : ""}
             <div className="col col-md nuestrasOficinas">
               <div className="infoUbicacion">
                 <div className="titleUbiHeader mb-2">
@@ -27,7 +61,9 @@ function AboutMe({ infoEmpresa }) {
                 {info.ubication.map((ubication, index) => (
                   <div className="mb-2" key={index}>
                     <div className="titleUbi">
-                      <h6 id="title"><FaMapMarkerAlt /> {ubication.title}</h6>
+                      <h6 id="title">
+                        <FaMapMarkerAlt /> {ubication.title}
+                      </h6>
                     </div>
                     <div className="descriptionUbi">
                       <p
@@ -70,7 +106,7 @@ function AboutMe({ infoEmpresa }) {
                   <p>{info.description}</p>
                 </div>
                 <div className="button">
-                  <Buttons>MÁS INFORMACIÓN</Buttons>
+                  <Buttons setShow={setShow}>MÁS INFORMACIÓN</Buttons>
                 </div>
               </div>
             </div>
