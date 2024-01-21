@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import { services } from "../../../data/data";
@@ -8,40 +9,34 @@ import NavItem from "react-bootstrap/NavItem";
 import "./ViewServicios.css";
 
 function ViewServicios() {
-  const { id } = useParams();
+  const params = useParams();
   const location = useLocation();
-  const filterServices = services.filter((service) => service.id == id);
-  const locationId = location.pathname.split("/")
-  const [activeServices, setActiveServices] = useState("");
-  
-  
+  const filterServices = services.filter((service) => service.id == params.id);
+  const locationId = location.pathname.split("/");
+  const [activeBar, setActiveBar] = useState(params.id);
+
   const SideBar = ({ services }) => {
-    function navActivo(id, title) {
-      if(locationId[2] === id) {
-        setActiveServices(title)
-      }
-    } 
-    console.log(activeServices)
+    const handleSelection = (title) => {
+      setActiveBar(title);
+    };
     return (
       <>
         <Nav
-          className=" sideBar w-100 d-md-flex d-none justify-content-center"
+          className="sideBar col-12 w-100 d-lg-flex d-none justify-content-center"
           justify
           variant="tabs"
-          // defaultActiveKey={activeServices}
+          defaultActiveKey={`Laboratorio Optico`}
         >
           <Nav.Item className="d-flex">
             {services.map((services) => (
-              <>
-                <Nav.Link
-                  key={services.title}
-                  // eventKey={activeServices}
-                  // href={`/servicios/${services.id}`}
-                  onClick={navActivo(services.id, services.title)}
-                >
-                  {services.title}
-                </Nav.Link>
-              </>
+              <Nav.Link
+                key={services.title}
+                active={activeBar == services.id}
+                href={`/servicios/${services.id}`}
+                onClick={() => handleSelection(services.title)}
+              >
+                {services.title}
+              </Nav.Link>
             ))}
           </Nav.Item>
         </Nav>
@@ -51,11 +46,9 @@ function ViewServicios() {
   const DropdownBar = () => {
     return (
       <Dropdown as={NavItem}>
-        <Dropdown.Toggle
-          split
-          as={NavLink}
-          id="dropdown-split-basic"
-        ></Dropdown.Toggle>
+        <Dropdown.Toggle split as={NavLink} id="dropdown-split-basic">
+          Menu{" "}
+        </Dropdown.Toggle>
 
         <Dropdown.Menu>
           {services.map((services) => (
@@ -69,26 +62,22 @@ function ViewServicios() {
       </Dropdown>
     );
   };
-  const ViewContainer = ({ children }) => {
-    return <div className="ContainerView">{children}</div>;
-  };
-
   const ContentServices = ({ filterServices }) => {
     return (
-      <div className="container mt-5 text-white">
+      <div className="container col-12 mt-4 text-white">
         <div className="row">
           <div className="headerContentContainer col-12 text-center">
             <h5 className="d-flex">
-              SERVICIO{" "}
+              SERVICIOS{" "}
               <span className="px-2" style={{ color: "#ffc700" }}>
                 {" "}
                 |{" "}
               </span>
               <div className="d-inline">
-                <div className="d-md-none">
+                <div className="d-lg-none">
                   <DropdownBar filterServices={filterServices} />
                 </div>
-                <div className="d-md-flex d-none">
+                <div className="d-lg-flex d-none">
                   <span>EMPORIO</span>
                 </div>
               </div>
@@ -102,27 +91,37 @@ function ViewServicios() {
           <div className="bodyContentContainer col-12 my-4 text-justify">
             <span>{filterServices.description}</span>
           </div>
-          <div className="buttonsContent d-flex justify-content-end col">
+          {/* <div className="buttonsContent d-flex justify-content-end col">
             <button className="btn btn-primary m-1">más información</button>
-          </div>
+          </div> */}
         </div>
       </div>
     );
   };
 
   return (
-    <ViewContainer>
-      {filterServices && (
-        <>
+    <div className="servicesBody">
+      <div className="row d-flex flex-column h-100">
+        <div className="col d-flex align-items-center p-0">
           <SideBar services={services} />
-          {filterServices.map((filterServices) => (
-            <div key={filterServices.id}>
-              <ContentServices filterServices={filterServices} />
+        </div>
+        <div className="col p-0">
+          <div className="servicesContent">
+            <div className="servicesView text-white">
+              {filterServices && (
+                <>
+                  {filterServices.map((filterServices) => (
+                    <div key={filterServices.id}>
+                      <ContentServices filterServices={filterServices} />
+                    </div>
+                  ))}
+                </>
+              )}
             </div>
-          ))}
-        </>
-      )}
-    </ViewContainer>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

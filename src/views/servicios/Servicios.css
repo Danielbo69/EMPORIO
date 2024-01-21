@@ -1,6 +1,16 @@
+.services {
+ height: 100vh;
+}
+
 .services h1 {
     color: #ffc700;
 }
 .services span {
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .services {
+        height: 100%;
+    }
 }

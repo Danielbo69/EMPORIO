@@ -6,11 +6,12 @@ function Card({ services, onPressServices}) {
   return (
     <div className="containerCard">
       {services.map((servicios) => (
-        <div className="cardApp" key={servicios.id} onClick={() => onPressServices(servicios)}>
+        <div className="cardApp" key={servicios.id}>
           <div className="box">
             <span className="title">{servicios.title}</span>
             <div className="description">
-            <strong>{servicios.description}</strong>
+            {/* <strong>{servicios.description}</strong> */}
+              <span onClick={() => onPressServices(servicios)}>Más información</span>
             </div>
           </div>
         </div>

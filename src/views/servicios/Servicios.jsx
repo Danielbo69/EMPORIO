@@ -9,7 +9,7 @@ function Servicios() {
   const navigate = useNavigate();
 
   const onPressServices = (e) => {
-    navigate(`/servicios/${e.id}`);
+    navigate(`/servicios/${e.id}`, e);
   };
 
   return (
