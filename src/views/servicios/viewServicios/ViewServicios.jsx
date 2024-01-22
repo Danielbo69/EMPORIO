@@ -15,17 +15,17 @@ function ViewServicios() {
   const locationId = location.pathname.split("/");
   const [activeBar, setActiveBar] = useState(params.id);
 
+  const handleSelection = (id) => {
+    setActiveBar(id);
+  };
+
   const SideBar = ({ services }) => {
-    const handleSelection = (title) => {
-      setActiveBar(title);
-    };
     return (
       <>
         <Nav
           className="sideBar col-12 w-100 d-lg-flex d-none justify-content-center"
           justify
           variant="tabs"
-          defaultActiveKey={`Laboratorio Optico`}
         >
           <Nav.Item className="d-flex">
             {services.map((services) => (
@@ -33,7 +33,7 @@ function ViewServicios() {
                 key={services.title}
                 active={activeBar == services.id}
                 href={`/servicios/${services.id}`}
-                onClick={() => handleSelection(services.title)}
+                onClick={() => handleSelection(services.id)}
               >
                 {services.title}
               </Nav.Link>
