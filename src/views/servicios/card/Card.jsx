@@ -4,7 +4,7 @@ import "./Card.css";
 function Card({ services, onPressServices}) {
 
   return (
-    <div className="containerCard">
+    <div className="containerCard" data-aos="zoom-in">
       {services.map((servicios) => (
         <div className="cardApp" key={servicios.id}>
           <div className="box">

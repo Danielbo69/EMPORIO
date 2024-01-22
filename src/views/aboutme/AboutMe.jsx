@@ -52,7 +52,7 @@ function AboutMe({ infoEmpresa }) {
           <div className="row aboutus" key={index}>
             {show ? <MyModal info={info} /> : ""}
             <div className="col col-md nuestrasOficinas">
-              <div className="infoUbicacion">
+              <div className="infoUbicacion" data-aos="fade-down">
                 <div className="titleUbiHeader mb-2">
                   <h5 id="title" style={colorTitle}>
                     NUESTRAS OFICINAS
@@ -77,7 +77,7 @@ function AboutMe({ infoEmpresa }) {
                   </div>
                 ))}
               </div>
-              <div className="col-md imgUbicacion">
+              <div className="col-md imgUbicacion" data-aos="fade-down">
                 <img src={imgUbi} alt={imgUbi} />
               </div>
             </div>
@@ -85,15 +85,17 @@ function AboutMe({ infoEmpresa }) {
               <div className="img">
                 <img
                   className="d-flex w-100"
+                  data-aos="flip-left"
                   src={info.imgCentral}
                   alt={info.imgCentral}
                 />
               </div>
             </div>
-            <div className="infoAbout col-md mx-lg-2">
+            <div className="infoAbout col-md mx-lg-2 " data-aos="fade-down">
               <div className="title">
                 <img
                   className="w-100 h-auto"
+                  
                   src={titleAbout}
                   alt={titleAbout}
                 />
