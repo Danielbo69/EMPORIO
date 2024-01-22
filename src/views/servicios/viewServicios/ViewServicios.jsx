@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { services } from "../../../data/data";
 import { Nav } from "react-bootstrap";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -11,12 +11,14 @@ import "./ViewServicios.css";
 function ViewServicios() {
   const params = useParams();
   const location = useLocation();
+  const navigate = useNavigate();
   const filterServices = services.filter((service) => service.id == params.id);
   const locationId = location.pathname.split("/");
   const [activeBar, setActiveBar] = useState(params.id);
 
   const handleSelection = (id) => {
     setActiveBar(id);
+    navigate(`/servicios/${id}`)
   };
 
   const SideBar = ({ services }) => {
@@ -32,7 +34,6 @@ function ViewServicios() {
               <Nav.Link
                 key={services.title}
                 active={activeBar == services.id}
-                href={`/servicios/${services.id}`}
                 onClick={() => handleSelection(services.id)}
               >
                 {services.title}
@@ -53,7 +54,7 @@ function ViewServicios() {
         <Dropdown.Menu>
           {services.map((services) => (
             <div key={services.title}>
-              <Dropdown.Item href={`/servicios/${services.id}`}>
+              <Dropdown.Item onClick={() => handleSelection(services.id)}>
                 {services.title}
               </Dropdown.Item>
             </div>
