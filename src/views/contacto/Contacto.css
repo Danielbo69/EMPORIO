@@ -1,4 +1,103 @@
 .contacto {
-    height: 100%;
+    height: 100vh;
     color: #fff;
+}
+
+.contacto span {
+    font-weight: 390;
+}
+
+.content-form {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "name name phone" "email email subject" "message message message" "buttom buttom buttom";
+}
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.phone {
+    grid-area: phone;
+}
+
+.subject {
+    grid-area: subject;
+}
+
+.message {
+    grid-area: message;
+}
+
+.buttom {
+    grid-area: buttom;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.PhoneInputInput {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-contact {
+    width: 100%;
+    border: 1px solid #023e8a;
+    background-color: #023e8a;
+    color: #fff;
+    height: 40px;
+    width: 100%;
+}
+
+.btn-contact:hover {
+    border: 1px solid #0053bf;
+    background-color: #0053bf;
+    color: #fff;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none !important;
+    color: #fff;
+    border-color: #023e8a;
+}
+
+/* 
+.form-control:hover {
+    transform: translateY(-3%);
+} */
+
+@media screen and (max-width: 428px) {
+    .contacto {
+        height: 100%;
+    }
+    .content-form {
+        grid-template-areas: "name name name" "email email email" "phone phone phone" "subject subject subject" "message message message" "buttom buttom buttom";
+    }
 }

@@ -2,7 +2,7 @@ import "./Home.css";
 import { infoEmpresa } from "../../data/data";
 import Header from "../../components/header/Header";
 import AboutMe from "../aboutme/AboutMe";
-import Catalogue from "../catalogue/Catalogue";
+import Tecnologias from "../tecnology/Tecnologias";
 import Servicios from "../servicios/Servicios";
 import Lentes from '../lentes/Lentes'
 import Contacto from '../contacto/Contacto'
@@ -15,7 +15,7 @@ function Home() {
       <AboutMe infoEmpresa={infoEmpresa} />
       <Servicios />
       <Lentes />
-      <Catalogue />
+      <Tecnologias />
       <Contacto />
       <Footer /> 
     </>
