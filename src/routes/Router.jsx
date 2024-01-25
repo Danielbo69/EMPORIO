@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import NavMenu from "../components/navbar/Navbar";
 import Home from "../views/home/Home";
-import Tecnologias from "../views/Tecnology/Tecnologias";
+import Tecnologias from "../views/tecnology/Tecnologias";
 import ViewServicios from "../views/servicios/viewServicios/ViewServicios";
-import AboutMe from "../views/aboutme/AboutMe";
+// import AboutMe from "../views/aboutme/AboutMe";
 import Whatsapp from "../components/whatsapp/Whatsapp";
 import Lentes from "../views/lentes/Lentes";
 
