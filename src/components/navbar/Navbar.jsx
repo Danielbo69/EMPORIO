@@ -32,8 +32,7 @@ function NavMenu() {
                 {/* <Nav.Link onClick={() => navigate('/quienesSomos')}>QUIENES SOMOS</Nav.Link> */}
                 <Nav.Link onClick={() => navigate('/servicios/0')}>SERVICIOS</Nav.Link>
                 <Nav.Link onClick={() => navigate('/tecnologias')}>TECNOLOGIAS</Nav.Link>
-                <Nav.Link onClick={() => navigate('/lentes')}>LENTES</Nav.Link>
-                <Nav.Link onClick={() => navigate('/contacto')}>CONTACTO</Nav.Link>
+                <Nav.Link onClick={() => navigate('/lentes/0')}>LENTES</Nav.Link>
               </Nav>
               {/* <Form className="d-flex">
                   <Form.Control

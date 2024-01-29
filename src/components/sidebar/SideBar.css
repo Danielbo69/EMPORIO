@@ -1,0 +1,28 @@
+.sideBar {
+  /* margin-top: 3rem; */
+}
+
+.sideBar .nav-link {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+}
+
+.sideBar .nav-link.active {
+  background-color: #ffc700;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+}
+
+.sideBar .nav-link:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .sideBar {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+}

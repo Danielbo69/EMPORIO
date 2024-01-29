@@ -5,7 +5,7 @@ import Spinner from './components/spinner/Spinner'
 function App() {
   return (
     <div className="app">
-      <Spinner />
+      {/* <Spinner /> */}
       <Router />
     </div>
   );

@@ -1,10 +1,9 @@
 import Container from "../../components/container/Container";
 import "./Servicios.css";
 import Card from "./card/Card";
-import { services } from "../../data/data";
 import { useNavigate } from "react-router-dom";
 
-function Servicios() {
+function Servicios({ services }) {
   const navigate = useNavigate();
 
   const onPressServices = (e) => {
@@ -14,8 +13,10 @@ function Servicios() {
   return (
     <Container>
       <div className="services">
-        <h1 className="mb-4"> Nuestros Servicios</h1>
-        <Card services={services} onPressServices={onPressServices} />
+        <div>
+          <h1 className="mb-4"> Nuestros Servicios</h1>
+          <Card services={services} onPressServices={onPressServices} />
+        </div>
       </div>
     </Container>
   );

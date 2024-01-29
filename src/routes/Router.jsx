@@ -5,7 +5,7 @@ import Tecnologias from "../views/tecnology/Tecnologias";
 import ViewServicios from "../views/servicios/viewServicios/ViewServicios";
 // import AboutMe from "../views/aboutme/AboutMe";
 import Whatsapp from "../components/whatsapp/Whatsapp";
-import Lentes from "../views/lentes/Lentes";
+import ViewGlasses from "../views/glasses/viewGlasses/ViewGlasses";
 
 function Router() {
   return (
@@ -14,11 +14,9 @@ function Router() {
     <Whatsapp />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/quienesSomos" element={<AboutMe />} /> */}
-        <Route path="/servicios/:id?" element={<ViewServicios />} />
+        <Route path="/servicios/:id" element={<ViewServicios />} />
+        <Route path="/lentes/:id" element={<ViewGlasses />} />
         <Route path="/tecnologias" element={<Tecnologias />} />
-        <Route path="/lentes" element={<Lentes />} />
-        {/* <Route path="/contacto" element={<Contacto />} /> */}
       </Routes>
     </>
   );

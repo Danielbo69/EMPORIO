@@ -1,9 +1,13 @@
 .services {
  height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .services h1 {
     color: #ffc700;
+    /* text-align: left !important; */
 }
 .services span {
     color: #fff;

@@ -1,0 +1,39 @@
+.glassesBody {
+  height: 100vh;
+}
+
+.glassesData {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../assets//img/fondoApp.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.glassesView {
+  position: absolute;
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.headerContentContainer h5 {
+  align-items: center;
+}
+.headerContentContainer h1 {
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .glassesContent{
+    height: 100%;
+  }
+}
