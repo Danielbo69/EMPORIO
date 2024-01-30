@@ -14,28 +14,30 @@ function ViewServicios() {
 
   const handleSelection = (id) => {
     setActiveBar(id);
-    navigate(`/servicios/${id}`)
+    navigate(`/servicios/${id}`);
   };
 
   return (
     <div className="servicesBody">
-      <div className="row d-flex flex-column h-100">
+      <div className="servicesContent row d-flex flex-column">
         <div className="col d-flex align-items-center p-0">
-          <SideBar services={services} activeBar={activeBar} handleSelection={handleSelection}/>
+          <SideBar
+            services={services}
+            activeBar={activeBar}
+            handleSelection={handleSelection}
+          />
         </div>
         <div className="col p-0">
-          <div className="servicesContent">
-            <div className="servicesView text-white">
-              {filterServices && (
-                <>
-                  {filterServices.map((filter) => (
-                    <div key={filter.id}>
-                      <ViewContentServices filter={filter} data={services} handleSelection={handleSelection}/>
-                    </div>
-                  ))}
-                </>
-              )}
-            </div>
+          <div className="servicesData">
+            {filterServices.map((filter) => (
+              <div className="text-white" key={filter.id}>
+                <ViewContentServices
+                  filter={filter}
+                  data={services}
+                  handleSelection={handleSelection}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

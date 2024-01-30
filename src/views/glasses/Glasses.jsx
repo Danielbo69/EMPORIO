@@ -1,4 +1,3 @@
-import React from "react";
 import "./Glasses.css";
 import Container from "../../components/container/Container";
 import CardImage from "../../components/card/CardImage";

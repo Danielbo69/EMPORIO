@@ -1,17 +1,13 @@
-import React from "react";
 import "./CardImage.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import { useNavigate } from "react-router-dom";
 
 function CardImage({ glasses, onPressGlasses }) {
-  const navigate = useNavigate();
   return (
     <>
       {glasses.map((lens) => (
         <div
           className="mb-2 col-md-6 col-lg-4 col-xl-4"
-          data-aos="flip-right"
           key={lens.id}
         >
           <Card className="card">

@@ -38,3 +38,8 @@
     opacity: 1;
 }
 
+@media (max-width: 767px) {
+  .card:hover {
+    transform: translateY(-1%);
+  }
+}

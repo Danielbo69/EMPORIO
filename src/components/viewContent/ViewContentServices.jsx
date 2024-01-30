@@ -2,7 +2,7 @@ import DropdownBar from "../dropdown/DropdownBar";
 
 function ViewContentServices({ filter, data, handleSelection }) {
   return (
-    <div className="container col-12 mt-4 text-white">
+    <div className="container col-12 mt-5 text-white">
       <div className="row">
         <div className="headerContentContainer col-12 text-center">
           <h5 className="d-flex">

@@ -1,7 +1,7 @@
 .servicesBody {
   height: 100vh;
 }
-.servicesContent {
+.servicesData {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -15,13 +15,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.servicesView {
-  position: absolute;
-  border-radius: 5px;
-  width: 100%;
-  height: auto;
 }
 
 .contentServices {

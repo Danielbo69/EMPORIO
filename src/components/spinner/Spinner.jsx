@@ -1,10 +1,11 @@
 import "./Spinner.css";
 
-function Spinner() {
+function Spinner({setSpinner}) {
   setTimeout(function () {
     const contenedor = document.getElementById("contenedor_loader");
     contenedor.style.visibility = "hidden";
     contenedor.style.opacity = "0";
+    setSpinner(false)
   }, 5000);
   return (
     // Símbolo de Carga
