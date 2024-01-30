@@ -18,6 +18,10 @@ function Contacto() {
 
   const Ref = useRef();
 
+  const colorTitle = {
+    color: "#ffc700",
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormContact({
@@ -77,7 +81,7 @@ function Contacto() {
     <Container>
       <div className="contacto" data-aos="fade-up">
         <div className="w-100">
-          <h1 className="mb-4">CONTACTO</h1>
+          <h1 className="mb-4" id="title" style={colorTitle}>CONTACTO</h1>
           <form className="content-form" ref={Ref} onClick={handleSubmit}>
             <div className="name">
               <span className="lead">NOMBRE</span>

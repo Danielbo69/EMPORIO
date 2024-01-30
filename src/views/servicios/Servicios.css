@@ -1,20 +1,15 @@
 .services {
- height: 100vh;
- display: flex;
- justify-content: center;
- align-items: center;
-}
-
-.services h1 {
-    color: #ffc700;
-    /* text-align: left !important; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .services span {
-    color: #fff;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
-    .services {
-        height: 100%;
-    }
+  .services {
+    height: 100%;
+  }
 }

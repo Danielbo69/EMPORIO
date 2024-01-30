@@ -4,6 +4,9 @@ import CardImage from "../../components/card/CardImage";
 import { useNavigate } from "react-router-dom";
 
 function Glasses({ glasses }) {
+  const colorTitle = {
+    color: "#ffc700",
+  };
   const navigate = useNavigate();
 
   const onPressGlasses = (e) => {
@@ -11,7 +14,7 @@ function Glasses({ glasses }) {
   };
   return (
     <Container>
-      <h1 className="text-white mb-2">LENTES</h1>
+      <h1 className="mb-4" id="title" style={colorTitle}>Lentes</h1>
       <div className="glasses">
         <div className="row m-0 w-100">
           <CardImage glasses={glasses} onPressGlasses={onPressGlasses} />

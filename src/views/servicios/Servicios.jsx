@@ -10,11 +10,18 @@ function Servicios({ services }) {
     navigate(`/servicios/${e.id}`);
   };
 
+  const colorTitle = {
+    color: "#ffc700",
+  };
+
   return (
     <Container>
       <div className="services">
         <div>
-          <h1 className="mb-4"> Nuestros Servicios</h1>
+          <h1 className="mb-4" id="title" style={colorTitle}>
+            {" "}
+            Nuestros Servicios
+          </h1>
           <Card services={services} onPressServices={onPressServices} />
         </div>
       </div>
