@@ -24,13 +24,6 @@
 }
 
 @media (max-width: 460px) {
-  .header{
-    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 90%, 0% 75%, 0 0)
-  }
-  .contentHeader{
-    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0)
-
-  }
   .contentHeader img {
     width: 300px;
   }
