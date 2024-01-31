@@ -38,14 +38,18 @@
   text-align: justify;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*Custom Scrollbar*/
 
 body::-webkit-scrollbar {
-  width: 13px;
+  width: 6px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #969696;
+  background-color: #9f9f9f;
   /* background: rgb(255, 199, 0); */
 }
 

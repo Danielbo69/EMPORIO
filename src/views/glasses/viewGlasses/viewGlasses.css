@@ -1,5 +1,5 @@
 .glassesBody {
-  height: 100vh;
+  min-height: 100vh;
 }
 .glassesData {
   margin: 0;
@@ -22,6 +22,12 @@
 }
 .headerContentContainer h1 {
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .glassesBody{
+    height: 100%;
+  }
 }
 
 @media (min-width: 769px) {

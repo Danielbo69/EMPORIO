@@ -7,6 +7,7 @@ import Servicios from "../servicios/Servicios";
 import Glasses from '../glasses/Glasses'
 import Contacto from '../contacto/Contacto'
 import Footer from '../footer/Footer'
+// import { ScrollRestoration } from "react-router-dom";
 
 function Home() {
   return (
@@ -18,6 +19,11 @@ function Home() {
       <Glasses glasses={glasses} />
       <Contacto treatments={treatments} />
       <Footer /> 
+      {/* <ScrollRestoration
+        getKey={(location) => {
+          return location.pathname;
+        }}
+      /> */}
     </>
   );
 }

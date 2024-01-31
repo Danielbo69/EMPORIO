@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import NavMenu from "../components/navbar/Navbar";
 import Home from "../views/home/Home";
 import ViewServicios from "../views/servicios/viewServicios/ViewServicios";

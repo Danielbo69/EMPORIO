@@ -23,11 +23,17 @@
 }
 
 @media (max-width: 460px) {
+  .header{
+    height: 100% !important;
+  }
   .contentHeader img {
     width: 300px;
   }
 }
-@media (min-width: 461px) and (max-width: 768px) {
+@media (min-width: 768px) {
+  .header{
+    height: 100% !important;
+  }
   .contentHeader img {
     width: auto;
   }

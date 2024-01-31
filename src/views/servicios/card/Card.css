@@ -84,12 +84,12 @@
   align-items: end;
 }
 
-.cardApp .description span {
-  font-size: 0.9rem;
-  letter-spacing: 0.8px;
+.cardApp .description a {
+  font-size: 15px;
+  color: #fff;
 }
-.cardApp .description span:hover {
-  opacity: 0.6;
+.cardApp .description a:hover {
+  opacity: 0.8;
   cursor: pointer;
 }
 

@@ -1,14 +1,8 @@
 import Container from "../../components/container/Container";
 import "./Servicios.css";
 import Card from "./card/Card";
-import { useNavigate } from "react-router-dom";
 
 function Servicios({ services }) {
-  const navigate = useNavigate();
-
-  const onPressServices = (e) => {
-    navigate(`/servicios/${e.id}`);
-  };
 
   const colorTitle = {
     color: "#ffc700",
@@ -22,7 +16,7 @@ function Servicios({ services }) {
             {" "}
             Nuestros Servicios
           </h1>
-          <Card services={services} onPressServices={onPressServices} />
+          <Card services={services} />
         </div>
       </div>
     </Container>

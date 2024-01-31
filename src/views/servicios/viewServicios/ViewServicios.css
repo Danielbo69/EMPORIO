@@ -1,5 +1,5 @@
 .servicesBody {
-  height: 100vh;
+  min-height: 100vh;
 }
 .servicesData {
   margin: 0;
@@ -32,6 +32,9 @@
 }
 
 @media (max-width: 767px) {
+  .servicesBody {
+    height: 100%;
+  }
 
   .contentServices {
     width: 100%;
