@@ -1,5 +1,5 @@
 .header {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   place-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@
 }
 
 .contentHeader {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -24,16 +24,13 @@
 
 @media (max-width: 460px) {
   .header{
-    height: 100% !important;
+    /* clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 90%, 0% 75%, 0 0) */
   }
   .contentHeader img {
     width: 300px;
   }
 }
 @media (min-width: 768px) {
-  .header{
-    height: 100% !important;
-  }
   .contentHeader img {
     width: auto;
   }
