@@ -77,7 +77,7 @@ function AboutMe({ infoEmpresa }) {
                   </div>
                 ))}
               </div>
-              <div className="col-md imgUbicacion" data-aos="fade-down">
+              <div className="d-lg-flex d-none col-md imgUbicacion" data-aos="fade-down">
                 <img src={imgUbi} alt={imgUbi} />
               </div>
             </div>

@@ -19,7 +19,7 @@ function ViewGlasses() {
   return (
     <div className="glassesBody">
       <div className="glassesContent row d-flex flex-column">
-        <div className="col d-flex align-items-center p-0">
+        <div className="d-flex align-items-center p-0">
           <SideBar
             glasses={glasses}
             activeBar={activeBar}

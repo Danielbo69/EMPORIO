@@ -1,17 +1,22 @@
 /* eslint-disable no-undef */
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import ImgLogo from "../../assets/img/LOGO BLANCO.png";
+import ImgLogo from "../../assets/img/LOGO.png";
 
 function NavMenu() {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar expand="xxl" className="bg-body-tertiary navbar-dark">
         <Container fluid>
-          <Navbar.Brand href="/" style={{ cursor: "pointer" }}>
+          <Navbar.Brand
+            onClick={() => navigate("/")}
+            style={{ cursor: "pointer" }}
+          >
             <img src={ImgLogo} alt={ImgLogo} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xxl`} />
@@ -27,8 +32,16 @@ function NavMenu() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="/servicios/1">SERVICIOS</Nav.Link>
-                <Nav.Link href="/lentes/0">LENTES</Nav.Link>
+                <Nav.Link
+                  onClick={() => navigate("/servicios/1")}
+                >
+                  SERVICIOS
+                </Nav.Link>
+                <Nav.Link
+                  onClick={() => navigate("/lentes/0")}
+                >
+                  LENTES
+                </Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

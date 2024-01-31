@@ -16,7 +16,7 @@ const ServicesBar = ({ services, activeBar, handleSelection }) => {
               active={activeBar == services.id}
               onClick={() => handleSelection(services.id)}
             >
-              {services.title}
+              <label id="title">{services.title}</label>
             </Nav.Link>
           ))}
         </Nav.Item>
@@ -40,7 +40,7 @@ const GlassesBar = ({ glasses, activeBar, handleSelection }) => {
               active={activeBar == glasses.id}
               onClick={() => handleSelection(glasses.id)}
             >
-              {glasses.title}
+              <label id="title">{glasses.title}</label>
             </Nav.Link>
           ))}
         </Nav.Item>

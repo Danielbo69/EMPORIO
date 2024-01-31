@@ -1,4 +1,24 @@
 .tecnologias {
-    height: 100%;
-    color: #fff;
+  height: 100%;
+  color: #fff;
+}
+
+.tecnologias .title {
+  background: linear-gradient(90deg, #ffc700c7 10%, #262626c7 10%);
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.tecnologias .title h5 {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .tecnologias .title {
+    border-radius: 0px;
+    padding: 10px;
+    justify-content: center;
+    background: linear-gradient(90deg, #ffc700c7 3%, #262626c7 3%);
+  }
 }

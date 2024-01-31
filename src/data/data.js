@@ -1,4 +1,4 @@
-import ImgCenter from "../assets/img/Black & White.png";
+import ImgCenter from "../assets/img/Yellow.jpg";
 import carouselImg from "../assets/img/carousel.jpg"
 import carouselImg1 from "../assets/img/carousel1.jpg"
 import carouselImg2 from "../assets/img/carousel3.jpg"
@@ -135,12 +135,12 @@ export const glasses = [
     image: carouselImg3,
     description: 'Son un tipo de lente que tienen un incremento continuo en el aumento desde la parte superior hasta la parte inferior del lente. Están diseñadas para corregir la visión tanto en lejos, como en distancias intermedia y cercana, todo en una misma lente.',
     subData: [
-      {
-        title: "DIGITAL/IN",
-        description:
-          "Ideales para quienes buscan mejorar la performance y la estética de sus anteriores bifocales.La tecnología Soft Molding suaviza la transición entre todas las áreas de enfoque para brindarle una sensación de lectura placentera y sin limitaciones.",
-          image: ''
-      },
+      // {
+      //   title: "DIGITAL/IN",
+      //   description:
+      //     "Ideales para quienes buscan mejorar la performance y la estética de sus anteriores bifocales.La tecnología Soft Molding suaviza la transición entre todas las áreas de enfoque para brindarle una sensación de lectura placentera y sin limitaciones.",
+      //     image: ''
+      // },
       {
         title: "DIGITAL/PRO",
         description:
@@ -165,7 +165,7 @@ export const glasses = [
     id: '4',
     title: "ESPECIALIDADES",
     image: carouselImg4,
-    description: 'Especialidades que tenemos directamentes desde Emperio para ti.',
+    description: 'Especialidades que tenemos directamentes desde Emporio para ti.',
     subData: [
       {
         title: "DRIVE",

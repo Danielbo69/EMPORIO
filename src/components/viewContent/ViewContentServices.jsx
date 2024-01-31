@@ -6,7 +6,7 @@ function ViewContentServices({ filter, data, handleSelection }) {
       <div className="row">
         <div className="headerContentContainer col-12 text-center">
           <h5 className="d-flex">
-            SERVICIOS{" "}
+            <span id="title">SERVICIOS </span>
             <span className="px-2" style={{ color: "#ffc700" }}>
               {" "}
               |{" "}
@@ -16,13 +16,13 @@ function ViewContentServices({ filter, data, handleSelection }) {
                 <DropdownBar data={data} handleSelection={handleSelection} />
               </div>
               <div className="d-lg-flex d-none">
-                <span>EMPORIO</span>
+                <span id="title">EMPORIO</span>
               </div>
             </div>
           </h5>
           <h1 className="d-flex">
             <div className="d-inline">
-              <strong>{filter.title}</strong>
+              <strong id="title">{filter.title}</strong>
             </div>
           </h1>
         </div>

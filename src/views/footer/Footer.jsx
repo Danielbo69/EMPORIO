@@ -1,11 +1,13 @@
-import React from "react";
 import "./Footer.css";
-import Container from "../../components/container/Container";
 
 function Footer() {
   return (
     <div className="footer">
-      <Container>Footer</Container>
+      <strong>
+        <label className="m-3">
+          © EMPORIO - TODOS LOS DERECHOS RESERVADOS - 2024
+        </label>
+      </strong>
     </div>
   );
 }

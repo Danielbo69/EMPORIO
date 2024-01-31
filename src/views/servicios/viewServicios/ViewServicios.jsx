@@ -20,7 +20,7 @@ function ViewServicios() {
   return (
     <div className="servicesBody">
       <div className="servicesContent row d-flex flex-column">
-        <div className="col d-flex align-items-center p-0">
+        <div className="d-flex align-items-center p-0">
           <SideBar
             services={services}
             activeBar={activeBar}

@@ -81,10 +81,14 @@ function Contacto() {
     <Container>
       <div className="contacto" data-aos="fade-up">
         <div className="w-100">
-          <h1 className="mb-4" id="title" style={colorTitle}>CONTACTO</h1>
+          <h1 className="mb-4" id="title" style={colorTitle}>
+            CONTACTO
+          </h1>
           <form className="content-form" ref={Ref} onClick={handleSubmit}>
             <div className="name">
-              <span className="lead">NOMBRE</span>
+              <span className="lead" id="title">
+                NOMBRE
+              </span>
               <input
                 className="form-control"
                 type="text"
@@ -94,7 +98,9 @@ function Contacto() {
               />
             </div>
             <div className="email">
-              <span className="lead">CORREO</span>
+              <span className="lead" id="title">
+                CORREO
+              </span>
               <input
                 className="form-control"
                 type="email"
@@ -104,7 +110,9 @@ function Contacto() {
               />
             </div>
             <div className="phone">
-              <span className="lead">TELEFONO</span>
+              <span className="lead" id="title">
+                TELEFONO
+              </span>
               <PhoneInput
                 className="form-control"
                 name="phone"
@@ -113,7 +121,9 @@ function Contacto() {
               />
             </div>
             <div className="subject">
-              <span className="lead">ASUNTO</span>
+              <span className="lead" id="title">
+                ASUNTO
+              </span>
               <input
                 className="form-control"
                 type="text"
@@ -123,7 +133,9 @@ function Contacto() {
               />
             </div>
             <div className="message">
-              <span className="lead">Mensaje</span>
+              <span className="lead" id="title">
+                MENSAJE
+              </span>
               <input
                 className="form-control"
                 type="text"
@@ -135,7 +147,9 @@ function Contacto() {
             </div>
             <div className="buttom">
               <button className="btn-contact" type="submit">
-                Enviar
+                <span id="title">
+                  <strong>ENVIAR</strong>
+                </span>
               </button>
             </div>
           </form>

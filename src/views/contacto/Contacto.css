@@ -73,23 +73,24 @@
 
 .btn-contact {
     width: 100%;
-    border: 1px solid #023e8a;
-    background-color: #023e8a;
+    border: 1px solid #ffc700;
+    background-color: transparent;
     color: #fff;
     height: 40px;
     width: 100%;
+    border-radius: 5px;
 }
 
 .btn-contact:hover {
-    border: 1px solid #0053bf;
-    background-color: #0053bf;
+    border: 1px solid #ffc700;
+    background-color: #ffc800;
     color: #fff;
 }
 
 button:focus:not(:focus-visible) {
     outline: none !important;
     color: #fff;
-    border-color: #023e8a;
+    border-color: #ffc700;
 }
 
 /* 
@@ -103,5 +104,13 @@ button:focus:not(:focus-visible) {
     }
     .content-form {
         grid-template-areas: "name name name" "email email email" "phone phone phone" "subject subject subject" "message message message" "buttom buttom buttom";
+    }
+}
+@media screen and (max-width: 768px) {
+    .btn-contact {
+        background-color: #ffc700;
+    }
+    .btn-contact:hover {
+        opacity: 0.8;
     }
 }
