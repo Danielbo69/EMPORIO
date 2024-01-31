@@ -1,9 +1,10 @@
 .header {
-  /* background-color:  transparent; */
-}
-
-.fondoHeader {
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
   background-image: url("../../assets/img/fondo7.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -13,7 +14,8 @@
 }
 
 .contentHeader {
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

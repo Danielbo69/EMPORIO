@@ -1,9 +1,6 @@
 import "./Spinner.css";
 
-function Spinner({setSpinner}) {
-  setTimeout(function () {
-    setSpinner(false)
-  }, 5000);
+function Spinner() {
   return (
     // Símbolo de Carga
     <div id="contenedor_loader">
