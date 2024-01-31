@@ -25,10 +25,6 @@
   height: 330px;
 }
 
-.card .description {
-  text-align: justify;
-}
-
 .card .button {
     background-color: #ffc700;
     border: none;

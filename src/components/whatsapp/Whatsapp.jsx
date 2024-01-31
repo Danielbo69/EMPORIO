@@ -8,11 +8,15 @@ function Whatsapp() {
   const [showTooltip, setShowTooltip] = useState(false);
   const target = useRef(null);
 
+  setTimeout(function () {
+    setShowTooltip(!showTooltip);
+  }, 10000);
+
   useEffect(() => {
     if (!showTooltip) {
       setShowTooltip(!showTooltip);
     }
-  }, []);
+  }, [showTooltip]);
 
   return (
     <>

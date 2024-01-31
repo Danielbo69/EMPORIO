@@ -1,7 +1,6 @@
 .glassesBody {
   height: 100vh;
 }
-
 .glassesData {
   margin: 0;
   padding: 0;
@@ -17,7 +16,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .headerContentContainer h5 {
   align-items: center;

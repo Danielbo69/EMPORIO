@@ -52,8 +52,13 @@
 .cardApp .box {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   height: 180px;
+  transition: all 400ms ease;
+}
+
+.cardApp .box:hover {
+  transform: translateY(-1%);
+  opacity: 0.9;
 }
 
 .cardApp .box .title {
@@ -71,12 +76,6 @@
   font-size: 13px;
 }
 
-.cardApp .box:hover {
-  box-shadow: 0px 0px 10px 0.9px #fff;
-  border: 1px solid rgba(255, 255, 255, 0.454);
-  /* cursor: pointer; */
-}
-
 .cardApp .description {
   width: 100%;
   height: 100%;
@@ -92,7 +91,6 @@
 .cardApp .description span:hover {
   opacity: 0.6;
   cursor: pointer;
-  border-bottom: 1px solid #fff;
 }
 
 @media (max-width: 768px) { 

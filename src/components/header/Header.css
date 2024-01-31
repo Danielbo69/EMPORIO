@@ -22,8 +22,18 @@
   background-color: #00000091;
 }
 
-@media (max-width: 768px) {
-  .fondoHeader {
-    height: 100%;
+@media (max-width: 460px) {
+  .contentHeader img {
+    width: 300px;
+  }
+}
+@media (min-width: 461px) and (max-width: 768px) {
+  .contentHeader img {
+    width: auto;
+  }
+}
+@media (min-width: 1024px){
+  .contentHeader img {
+    width: auto;
   }
 }

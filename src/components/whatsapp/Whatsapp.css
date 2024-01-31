@@ -41,3 +41,13 @@
 .icon span:hover {
     cursor: pointer;
 }
+
+@media (max-width: 460px) {
+    .btn-wsp {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 15px;
+    font-size: 25px;
+    }
+}

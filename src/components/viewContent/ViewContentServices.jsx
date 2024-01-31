@@ -1,4 +1,5 @@
 import DropdownBar from "../dropdown/DropdownBar";
+import Card from "react-bootstrap/Card";
 
 function ViewContentServices({ filter, data, handleSelection }) {
   return (
@@ -20,14 +21,16 @@ function ViewContentServices({ filter, data, handleSelection }) {
               </div>
             </div>
           </h5>
-          <h1 className="d-flex">
-            <div className="d-inline">
-              <strong id="title">{filter.title}</strong>
-            </div>
-          </h1>
         </div>
         <div className="bodyContentContainer col-12 my-4 text-justify">
-          <span>{filter.description}</span>
+          <Card className="card">
+            <Card.Body className="cardBody">
+              <Card.Title className="title" id="title">
+                  {filter.title}
+                </Card.Title>
+              <Card.Text id="description">{filter.description}</Card.Text>
+            </Card.Body>
+          </Card>
         </div>
       </div>
     </div>

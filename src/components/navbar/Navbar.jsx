@@ -33,6 +33,11 @@ function NavMenu() {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link
+                  onClick={() => navigate("/")}
+                >
+                  INICIO
+                </Nav.Link>
+                <Nav.Link
                   onClick={() => navigate("/servicios/1")}
                 >
                   SERVICIOS

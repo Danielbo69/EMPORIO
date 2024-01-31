@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Sol W01 Black Italic";
+  src: url("427e7b78e7ec21cbcec02620d0d72d41.eot");
+  src: url("427e7b78e7ec21cbcec02620d0d72d41.eot?#iefix")
+      format("embedded-opentype"),
+    url("427e7b78e7ec21cbcec02620d0d72d41.woff") format("woff"),
+    url("427e7b78e7ec21cbcec02620d0d72d41.woff2") format("woff2"),
+    url("427e7b78e7ec21cbcec02620d0d72d41.ttf") format("truetype"),
+    url("427e7b78e7ec21cbcec02620d0d72d41.svg#Sol W01 Black Italic")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .app {
   background-image: url("./assets//img/fondoApp.png");
   background-attachment: fixed;
@@ -11,6 +26,17 @@
 
 .row {
   margin: 0px !important;
+}
+
+#title {
+  font-family: "Sol W01 Black Italic";
+  letter-spacing: 0.1em;
+}
+
+#description {
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  font-weight: 700;
 }
 
 /*Custom Scrollbar*/

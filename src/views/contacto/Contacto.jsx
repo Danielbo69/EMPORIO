@@ -84,7 +84,7 @@ function Contacto() {
           <h1 className="mb-4" id="title" style={colorTitle}>
             CONTACTO
           </h1>
-          <form className="content-form" ref={Ref} onClick={handleSubmit}>
+          <form className="content-form" ref={Ref} onSubmit={handleSubmit}>
             <div className="name">
               <span className="lead" id="title">
                 NOMBRE

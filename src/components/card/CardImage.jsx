@@ -19,7 +19,7 @@ function CardImage({ glasses, onPressGlasses }) {
             />
             <Card.Body className="cardBody">
               <Card.Title className="title" id="title">{lens.title}</Card.Title>
-              <Card.Text className="description">{lens.description}</Card.Text>
+              <Card.Text className="description" id="description">{lens.description}</Card.Text>
               <div className="w-100 d-flex justify-content-end">
                 <Button className="button" variant="primary" onClick={() => onPressGlasses(lens)}>Más información</Button>
               </div>

@@ -1,5 +1,5 @@
 import DropdownBar from "../dropdown/DropdownBar";
-import './ViewContentGlasses.css'
+import "./ViewContentGlasses.css";
 import Card from "react-bootstrap/Card";
 
 function ViewContentGlasses({ filter, data, handleSelection }) {
@@ -8,7 +8,7 @@ function ViewContentGlasses({ filter, data, handleSelection }) {
       <div className="row">
         <div className="headerContentContainer text-center">
           <h5 className="d-flex">
-            <span id="title">LENTES{" "}</span>
+            <span id="title">LENTES </span>
             <span className="px-2" style={{ color: "#ffc700" }}>
               {" "}
               |{" "}
@@ -34,17 +34,13 @@ function ViewContentGlasses({ filter, data, handleSelection }) {
             key={subData.title}
           >
             <Card className="card">
-            {/* <Card.Img
-              className="img"
-              variant="top"
-              src={lens.image}
-              alt={lens.title}
-            /> */}
-            <Card.Body className="cardBody">
-              <Card.Title className="title" id="title">{subData.title}</Card.Title>
-              <Card.Text className="description">{subData.description}</Card.Text>
-            </Card.Body>
-          </Card>
+              <Card.Body className="cardBody">
+                <Card.Title className="title" id="title">
+                  {subData.title}
+                </Card.Title>
+                <Card.Text id="description">{subData.description}</Card.Text>
+              </Card.Body>
+            </Card>
           </div>
         ))}
       </div>

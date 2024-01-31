@@ -69,7 +69,7 @@ function AboutMe({ infoEmpresa }) {
                       <p
                         className="mx-4"
                         style={{ letterSpacing: 2 }}
-                        id="descriptionAbout"
+                        id="description"
                       >
                         {ubication.description}
                       </p>
@@ -100,7 +100,7 @@ function AboutMe({ infoEmpresa }) {
                   alt={titleAbout}
                 />
               </div>
-              <div className="descriptionAbout" id="descriptionAbout">
+              <div className="descriptionAbout" id="description">
                 <div className="whoare">
                   <img className="w-100" src={whoareTitle} alt={whoareTitle} />
                 </div>
