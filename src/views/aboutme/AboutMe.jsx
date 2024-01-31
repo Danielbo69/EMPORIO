@@ -52,7 +52,7 @@ function AboutMe({ infoEmpresa }) {
           <div className="row aboutus" key={index}>
             {show ? <MyModal info={info} /> : ""}
             <div className="col col-md nuestrasOficinas">
-              <div className="infoUbicacion" data-aos="fade-down">
+              <div className="infoUbicacion" data-aos="fade-down-right">
                 <div className="titleUbiHeader mb-2">
                   <h5 id="title" style={colorTitle}>
                     NUESTRAS OFICINAS
