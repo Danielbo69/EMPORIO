@@ -1,12 +1,21 @@
 import ImgCenter from "../assets/img/Yellow.jpg";
-import carouselImg from "../assets/img/carousel.jpg"
-import carouselImg1 from "../assets/img/carousel1.jpg"
-import carouselImg2 from "../assets/img/carousel3.jpg"
-import carouselImg3 from "../assets/img/carousel4.jpg"
-import carouselImg4 from "../assets/img/carousel0.jpg"
+import carouselImg from "../assets/img/carousel.jpg";
+import carouselImg1 from "../assets/img/carousel1.jpg";
+import carouselImg2 from "../assets/img/carousel3.jpg";
+import carouselImg3 from "../assets/img/carousel4.jpg";
+import carouselImg4 from "../assets/img/carousel0.jpg";
+import ImageTreatments from "../assets/img/Capa1.png";
+// import ImageTreatments1 from "../assets/img/Capa 2.jpg";
+import ImageTreatments2 from "../assets/img/Capa3.png";
+import ImageTreatments3 from "../assets/img/Capa4.png";
+import ImageTreatments4 from "../assets/img/Capa5.png";
+import ImageTreatments5 from "../assets/img/Capa6.png";
+import ImageTreatments6 from "../assets/img/Capa7.png";
+import ImageTreatments7 from "../assets/img/Capa8.png";
 
 export const infoEmpresa = [
   {
+    title: 'SOBRE NOSOTROS',
     description:
       "Emporio, un laboratorio óptico de destacado, ha experimentado un impresionante crecimiento a lo largo de los años, posicionándose como un referente en su industria. Su firme compromiso con la sostenibilidad y la calidad de sus productos, respaldado por la tecnología free form, lo ha convertido en un referente destacado en el sector. El nivel profesional de sus colaboradores es excepcional, respaldando la reputación de Emporio como un lugar donde la innovación y la excelencia en soluciones ópticas se combinan para satisfacer las necesidades más exigentes de los clientes.",
     vision:
@@ -70,70 +79,74 @@ export const services = [
 
 export const glasses = [
   {
-    id: '0',
+    id: "0",
     title: "MONOFOCALES",
     image: carouselImg,
-    description: 'Son lentes que disponen de la misma graduación en la totalidad de su superficie. Estos lentes permiten la corrección de cualquier clase de error refractivo, como la presbicia, el astigmatismo, la hipermetropía o la miopía.',
+    description:
+      "Son lentes que disponen de la misma graduación en la totalidad de su superficie. Estos lentes permiten la corrección de cualquier clase de error refractivo, como la presbicia, el astigmatismo, la hipermetropía o la miopía.",
     subData: [
       {
         title: "VISION PRIME 8K",
         description:
           "Únicas con tecnología 8K Surface Definition que brinda una mayor percepción al detalle y nitidez en cualquier dirección de mirada.Desarrolladas con tratamientos de protección para conservar su salud visual a través del tiempo.",
-          image: ''
+        image: "",
       },
       {
         title: "RELAX",
         description:
           "El mejor aliado para estudiantes o personas que desarrollan actividades visuales intensivas y sufren de fatiga visual.RLX Technology provee un plus de potencia para obtener relajación y comfort visual.",
-          image: ''
+        image: "",
       },
       {
         title: "SMALL FIT",
         description:
           "Estética e innovación son las cualidades requeridas para aquellos con medianas y altas prescripciones.Blending Technology brinda una considerable reducción de espesores y peso del lente para obtener resultados estéticos insuperables.",
-          image: ''
+        image: "",
       },
     ],
   },
   {
-    id: '1',
+    id: "1",
     title: "BIFOCALES",
     image: carouselImg1,
-    description: 'Son un tipo de lente que se encarga de corregir los problemas relacionados con dos zonas de visión, un lente que nació en sus inicios para poder ayudar a corregir los problemas relacionados con la presbicia o vista cansada',
+    description:
+      "Son un tipo de lente que se encarga de corregir los problemas relacionados con dos zonas de visión, un lente que nació en sus inicios para poder ayudar a corregir los problemas relacionados con la presbicia o vista cansada",
     subData: [
       {
         title: "INVISIBLE",
         description:
           "Especialmente ideados para usuarios adeptos a diseños bifocales. Posee una mejor estética por la invisibilidad de su segmento para leer de cerca ofreciendo la calidad y la precisión. ",
-          image: ''
+        image: "",
       },
       {
         title: "SOFT/LINE",
         description:
           "Lente desarrollado para quienes buscan un bifocal con mayor estética para mejorar la invisibilidad del segmento para el área de lectura",
-          image: ''
+        image: "",
       },
     ],
   },
   {
-    id: '2',
+    id: "2",
     title: "OCUPACIONALES",
     image: carouselImg2,
-    description: 'Cubren la visión a una distancia corta e intermedia y se adaptan a una demanda visual específica, muy común en la mayoría de los trabajos actuales en los que se exige un gran uso de dispositivos digitales.',
+    description:
+      "Cubren la visión a una distancia corta e intermedia y se adaptan a una demanda visual específica, muy común en la mayoría de los trabajos actuales en los que se exige un gran uso de dispositivos digitales.",
     subData: [
       {
         title: "LINEA DAILY",
         description:
           "Lente desarrollado para quienes buscan un bifocal con mayor estética para mejorar la invisibilidad del segmento para el área de lectura.",
-          image: ''
+        image: "",
       },
     ],
   },
   {
-    id: '3',
+    id: "3",
     title: "PROGRESIVOS",
     image: carouselImg3,
-    description: 'Son un tipo de lente que tienen un incremento continuo en el aumento desde la parte superior hasta la parte inferior del lente. Están diseñadas para corregir la visión tanto en lejos, como en distancias intermedia y cercana, todo en una misma lente.',
+    description:
+      "Son un tipo de lente que tienen un incremento continuo en el aumento desde la parte superior hasta la parte inferior del lente. Están diseñadas para corregir la visión tanto en lejos, como en distancias intermedia y cercana, todo en una misma lente.",
     subData: [
       // {
       //   title: "DIGITAL/IN",
@@ -145,37 +158,40 @@ export const glasses = [
         title: "DIGITAL/PRO",
         description:
           "Recomendadas para quienes son usuarios de multifocales y buscan llevar su experiencia visual a otro nivel.Balanced process permite un justo equilibrio entre las áreas de enfoque. Provee campos de visión cercana que se ajustan a cualquier tipo de actividad por desarrollar.",
-          image: ''
+        image: "",
       },
       {
         title: "MID BALANCE",
         description:
           "Un lente premium para quienes solución innovadora para obtener la performance al ver de lejos y de limitaciones CDT & WearFIt las cualidades ópticas particularidades del rostro y la uso de sus lentes.",
-          image: ''
+        image: "",
       },
       {
         title: "EMPORIUM",
         description:
           "Adaptados a las exigencias de la era digital. Brindan una experiencia visual incomparable en el uso intensivo de dispositivos electrónicos.Adaptative Focus mejora los campos visuales de cerca e intermedia facilitando la transición entre las áreas de enfoque mejorando la ergonomía postural.",
-          image: ''
+        image: "",
       },
     ],
   },
   {
-    id: '4',
+    id: "4",
     title: "ESPECIALIDADES",
     image: carouselImg4,
-    description: 'Especialidades que tenemos directamentes desde Emporio para ti.',
+    description:
+      "Especialidades que tenemos directamentes desde Emporio para ti.",
     subData: [
       {
         title: "DRIVE",
-        description: "Adaptado para satisfacer las necesidades de aquellos que pasan la mayor parte del tiempo en la conducción automovilística. Incorpora Free Periphery Process permitiendo lentes libres de astigmatismo periférico para lograr una conducción más confortable y segura",
-        image: ''
+        description:
+          "Adaptado para satisfacer las necesidades de aquellos que pasan la mayor parte del tiempo en la conducción automovilística. Incorpora Free Periphery Process permitiendo lentes libres de astigmatismo periférico para lograr una conducción más confortable y segura",
+        image: "",
       },
       {
         title: "MONOVISION",
-        description: "Progresivo simétrico y con geometría especular diseñado para usuarios que no tienen convergencia o han sufrido la pérdida irreversible de visión en uno de sus ojos. ",
-        image: ''
+        description:
+          "Progresivo simétrico y con geometría especular diseñado para usuarios que no tienen convergencia o han sufrido la pérdida irreversible de visión en uno de sus ojos. ",
+        image: "",
       },
     ],
   },
@@ -183,43 +199,43 @@ export const glasses = [
 
 export const tecnology = [
   {
-    id: '0',
+    id: "0",
     title: "CONTINUUM DESIGN TECHNOLOGY",
     description:
       "CDT es una innovadora tecnología de diseño a partir de un moderno modelo matemático continuo que permite mejorar la fabricación de lentes oftálmicas. CONTINUUM DESIGN TECHNOLOGY permite tener el control de la óptica sobre toda la superficie del lente y enviarle al generador matrices de ságitas más grandes. Esto se traduce en lentes con mayores resoluciones ópticas para optimizar los campos.",
   },
   {
-    id: '1',
+    id: "1",
     title: "8K DEFINITION SURFACE",
     description:
       "La tecnología Continuum Design permite producir lentes con hasta 8 veces más definición óptica que otras de tecnología Freeform.Al igual que los pixeles en pantallas digitales U-HD, una mayor resolución en la superficie oftálmica hace que la lente producida tenga más definición óptica y en consecuencia beneficios reales en cuanto amplitud de campo y resolución de imágenes.",
   },
   {
-    id: '2',
+    id: "2",
     title: "ADAPTATIVE FOCUS TECHNOLOGY",
     description:
       "Con el incremento exponencial del uso de medios digitales tales como smartphones, tablets, navegadores, etc se comenzaron a adoptar hábitos de enfoque que desafían la adaptabilidad de nuestros ojos. A raíz de esto desarrollamos la tecnología Adaptative Focus, la cual permite optimizar el campo visual de intermedia y cerca, áreas más utilizadas para la lectura de medios digitales e impresos, para lograr dejar atrás cualquier problemática inherente a los nuevos hábitos de lectura. ",
   },
   {
-    id: '3',
+    id: "3",
     title: "WEAR FIT",
     description:
       "Desarrollamos un sistema basado en algoritmos matemáticos que se aplican en el proceso de diseño y producción de lentes que consiste en la inserción minuciosa de todos los datos característicos de cada uno de los usuarios tales como distancias interpupilares, ángulo panorámico, distancia al vértice y ángulo pantoscópico que dan como resultado de la ecuación, lentes personalizadas y únicas que se ajustan al usuario.",
   },
   {
-    id: '4',
+    id: "4",
     title: "AUTOMATIC CORRIDOR",
     description:
       "Al momento de elegir un armazón, por ejemplo, debemos tener en cuenta sus características intrínsecas y su interacción con las lentes prescriptas para la presbicia. Fue así como con el afán de reducir cualquier error, creamos un algoritmo matemático capaz de establecer el corredor ideal considerando prescripción, adición, alturas, ángulo pantoscópico y distancia al vértice para lograr maximizar el confort del usuario y la versatilidad en todas las áreas de visión.",
   },
   {
-    id: '5',
+    id: "5",
     title: "SMART FIT",
     description:
       'En la actualidad, el cálculo de optimización de espesores está supeditado al diámetro de la lente o a las medidas del armazón conjuntamente a los datos del usuario. SMART FIT, en cambio, incorpora cálculos avanzados que se nutren del "trace format" del marco. Es decir, toma en cuenta la forma geométrica de la montura (todos los puntos que forman la circunferencia -TRCFMT) para que al culminar el tallado, se logre una reducción de espesores de hasta un 40%.',
   },
   {
-    id: '6',
+    id: "6",
     title: "RAY TRACING",
     description:
       "La tecnología Ray Tracing (o trazado de rayos) es el método standard utilizado para el diseño óptico en general y, ya hace algunos años, para el diseño de lentes asféricas y progresivas en particular. El método consiste en hacer incidir virtualmente un conjunto de rayos sobre la superficie de la lente que se desea diseñar, optimizando su forma según las propiedades ópticas requeridas.",
@@ -228,43 +244,59 @@ export const tecnology = [
 
 export const treatments = [
   {
+    id: '0',
     title: "PROTECCIÓN U.V.",
     description:
       "Las lentes Novar protegen sus ojos de los nocivos rayos ultravioletas que emite el sol.",
+    image: ImageTreatments,
   },
   {
+    id: '1',
     title: "PROTECCIÓN BLUE TECH",
     description:
       "Adicione la exclusiva “dual blue cut protection”, que inhibe la nociva luz azul-violeta que puede provocar DME y daño prolongado a la retina.",
+    image: ImageTreatments2,
   },
   {
+    id: '2',
     title: "TRANSPARENCIA",
     description:
       "Con su tratamiento anti-reflejo DURAX PROTECT en cámara de alto vacío, las lentes Novar son 100% transparentes.",
+    image: ImageTreatments6,
   },
   {
+    id: '3',
     title: "ANTI-RAYAS",
     description:
       "Máxima protección anti-rayas por su exclusivo tratamiento PETRA. Sus lentes tendrán una mejor calidad de visión y mayor durabilidad por más tiempo",
+    image: ImageTreatments3,
   },
   {
-    title: "REPELEN LA SUCIEDAD, EL POLVO Y EL AGUA",
+    id: '4',
+    title: "HIDRO/FOBICO",
     description:
       "Contienen mejores propiedades hidrofóbicas, oleofóbicas y antiestáticas para tenerlas siempre más limpias.",
+    image: ImageTreatments4,
   },
   {
+    id: '5',
     title: "FOTOSENSIBLE",
     description:
       "Tecnología adicional para que sus lentes se adapten instantáneamente a los distintos ambientes por cambios de luz. Claras y transparentes en ambientes internos y oscuras ante la exposición del sol",
+    image: ImageTreatments5,
   },
   {
+    id: '6',
     title: "ANTI-DESLUMBRANTES",
     description:
       "El polarizado Adventra atenúa los reflejos de aquello que pueda deslumbrar al ojo provocado por reflejantes. Ideal para actividades al aire libre.",
+    image: ImageTreatments7,
   },
   {
+    id: '7',
     title: "ULTRADELGADOS",
     description:
       "Disponibles en materiales delgados y ultradelgados para reducir los espesores de borde hasta 40%",
+    image: '',
   },
 ];

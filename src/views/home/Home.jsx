@@ -4,10 +4,11 @@ import Header from "../../components/header/Header";
 import AboutMe from "../aboutme/AboutMe";
 import Tecnologias from "../tecnology/Tecnologias";
 import Servicios from "../servicios/Servicios";
-import Glasses from '../glasses/Glasses'
-import Contacto from '../contacto/Contacto'
-import Footer from '../footer/Footer'
-// import { ScrollRestoration } from "react-router-dom";
+import Glasses from '../glasses/Glasses';
+import Treatments from "../Treatments/Treatments";
+import Contacto from '../contacto/Contacto';
+import Footer from '../footer/Footer';
+
 
 function Home() {
   return (
@@ -15,15 +16,11 @@ function Home() {
       <Header />
       <AboutMe infoEmpresa={infoEmpresa} />
       <Servicios services={services} />
-      <Tecnologias tecnology={tecnology} />
       <Glasses glasses={glasses} />
-      <Contacto treatments={treatments} />
+      <Tecnologias tecnology={tecnology} />
+      <Treatments treatments={treatments} />
+      <Contacto />
       <Footer /> 
-      {/* <ScrollRestoration
-        getKey={(location) => {
-          return location.pathname;
-        }}
-      /> */}
     </>
   );
 }

@@ -7,7 +7,7 @@ import titleAbout from "../../assets/img/Title.png";
 import whoareTitle from "../../assets/img/Body Text.png";
 import imgUbi from "../../assets/img/Duplicate.png";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import Modal from "react-bootstrap/Modal";
+import ModalView from "../../components/Modal/Modal";
 
 function AboutMe({ infoEmpresa }) {
   const [show, setShow] = useState(false);
@@ -16,43 +16,14 @@ function AboutMe({ infoEmpresa }) {
     color: "#ffc700",
   };
 
-  const MyModal = ({ info }) => {
-    return (
-      <>
-        <Modal
-          show={show}
-          onHide={() => setShow(false)}
-          dialogClassName="modal-90w"
-          aria-labelledby="example-custom-modal-styling-title"
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-custom-modal-styling-title">
-              SOBRE NOSOTROS
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <div className="col">
-              <strong style={colorTitle}>MISIÓN</strong>
-              <p>{info.mision}</p>
-            </div>
-            <br />
-            <div className="col">
-              <strong style={colorTitle}>VISIÓN</strong> <p>{info.vision}</p>
-            </div>
-          </Modal.Body>
-        </Modal>
-      </>
-    );
-  };
-
   return (
     <Container>
       <div className="contentAbout">
         {infoEmpresa.map((info, index) => (
           <div className="row aboutus" key={index}>
-            {show ? <MyModal info={info} /> : ""}
-            <div className="col col-md nuestrasOficinas">
-              <div className="infoUbicacion" data-aos="fade-down-right">
+            {show ? <ModalView data={info} setShow={setShow} show={show}/> : ""}
+            <div className="col col-md nuestrasOficinas" data-aos="fade-down">
+              <div className="infoUbicacion">
                 <div className="titleUbiHeader mb-2">
                   <h5 id="title" style={colorTitle}>
                     NUESTRAS OFICINAS
@@ -77,7 +48,7 @@ function AboutMe({ infoEmpresa }) {
                   </div>
                 ))}
               </div>
-              <div className="d-lg-flex d-none col-md imgUbicacion" data-aos="fade-down">
+              <div className="d-lg-flex d-none col-md imgUbicacion">
                 <img src={imgUbi} alt={imgUbi} />
               </div>
             </div>

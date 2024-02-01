@@ -3,6 +3,7 @@ import "./Whatsapp.css";
 import { IoLogoWhatsapp, IoIosClose } from "react-icons/io";
 import Tooltip from "react-bootstrap/Tooltip";
 import Overlay from "react-bootstrap/Overlay";
+import { Link } from "react-router-dom";
 
 function Whatsapp() {
   const [showTooltip, setShowTooltip] = useState(false);
@@ -20,15 +21,15 @@ function Whatsapp() {
 
   return (
     <>
-      <a
+      <Link
         ref={target}
-        href="https://api.whatsapp.com/send?phone=5661017123"
+        to="https://beacons.ai/emporiolab"
         target="_blank"
         rel="noopener noreferrer"
         className="btn-wsp"
       >
         <IoLogoWhatsapp />
-      </a>
+      </Link>
       <Overlay
         target={target.current}
         show={showTooltip == true}
