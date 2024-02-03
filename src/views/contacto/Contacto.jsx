@@ -10,7 +10,6 @@ function Contacto() {
   const [formContact, setFormContact] = useState({
     name: "",
     email: "",
-    phone: "",
     subject: "",
     message: "",
   });
@@ -31,8 +30,8 @@ function Contacto() {
     if (
       formContact.name === "" ||
       formContact.email === "" ||
-      formContact.phone === "" ||
-      formContact.phone === undefined ||
+      phoneContact === "" ||
+      phoneContact === undefined ||
       formContact.subject === "" ||
       formContact.message === ""
     ) {
@@ -42,30 +41,36 @@ function Contacto() {
         text: "Todavia hay campos vacios",
       });
     } else {
-      emailjs.sendForm().then(
-        (result) => {
-          if (result.text === "OK") {
-            // Reset Form State
-            setFormContact({
-              name: "",
-              email: "",
-              phone: "",
-              subject: "",
-              message: "",
-            });
-            setPhoneContact("");
-            Swal.fire({
-              icon: "success",
-              position: "top-end",
-              title: "¡CORREO ENVIADO!",
-              text: "Se ha enviado correctamente...",
-            });
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_SERVICESID,
+          import.meta.env.VITE_TEMPLATEID,
+          Ref.current,
+          import.meta.env.VITE_PUBLICKEY
+        )
+        .then(
+          (result) => {
+            if (result.text === "OK") {
+              // Reset Form State
+              setFormContact({
+                name: "",
+                email: "",
+                subject: "",
+                message: "",
+              });
+              setPhoneContact("");
+              Swal.fire({
+                icon: "success",
+                position: "top-end",
+                title: "¡CORREO ENVIADO!",
+                text: "Nos contactaremos contigo en breve",
+              });
+            }
+          },
+          (error) => {
+            console.log(error.text);
           }
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+        );
     }
   };
 

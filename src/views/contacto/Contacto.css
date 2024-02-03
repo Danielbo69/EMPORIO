@@ -93,11 +93,6 @@ button:focus:not(:focus-visible) {
     border-color: #ffc700;
 }
 
-/* 
-.form-control:hover {
-    transform: translateY(-3%);
-} */
-
 @media screen and (max-width: 428px) {
     .contacto {
         height: 100%;

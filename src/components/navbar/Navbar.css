@@ -18,16 +18,17 @@
 }
 .nav-link {
     cursor: pointer;
-    /* color: #000; */
     font-size: 1.2rem;
+    color: #fff;
 }
 
 .nav-link:hover {
-    opacity: 0.8;
+    opacity: 1;
+    color: #ffc700;
 }
 
 .offcanvas {
-    /* background-color: #ffc700 !important; */
+    background-color: #212529 !important;
 }
 
 .offcanvas.show:not(.hiding), .offcanvas.showing {
@@ -36,7 +37,7 @@
 
 .navbar-toggler,
 .btn-close {
-    border: none !important
+    border: none !important;
 }
 
 .navbar-toggler:focus,

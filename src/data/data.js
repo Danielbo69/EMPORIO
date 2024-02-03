@@ -5,7 +5,7 @@ import carouselImg2 from "../assets/img/carousel3.jpg";
 import carouselImg3 from "../assets/img/carousel4.jpg";
 import carouselImg4 from "../assets/img/carousel0.jpg";
 import ImageTreatments from "../assets/img/Capa1.png";
-// import ImageTreatments1 from "../assets/img/Capa 2.jpg";
+import ImageTreatments1 from "../assets/img/Capa2.png";
 import ImageTreatments2 from "../assets/img/Capa3.png";
 import ImageTreatments3 from "../assets/img/Capa4.png";
 import ImageTreatments4 from "../assets/img/Capa5.png";
@@ -297,6 +297,6 @@ export const treatments = [
     title: "ULTRADELGADOS",
     description:
       "Disponibles en materiales delgados y ultradelgados para reducir los espesores de borde hasta 40%",
-    image: '',
+    image: ImageTreatments1,
   },
 ];

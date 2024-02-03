@@ -25,7 +25,7 @@ function NavMenu() {
             aria-labelledby={`offcanvasNavbarLabel-expand-xxl`}
             placement="end"
           >
-            <Offcanvas.Header closeButton>
+            <Offcanvas.Header closeButton closeVariant="white">
               <Offcanvas.Title
                 id={`offcanvasNavbarLabel-expand-xxl`}
               ></Offcanvas.Title>
@@ -33,16 +33,19 @@ function NavMenu() {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link
+                id="title"
                   onClick={() => navigate("/")}
                 >
                   INICIO
                 </Nav.Link>
                 <Nav.Link
+                id="title"
                   onClick={() => navigate("/servicios/1")}
                 >
                   SERVICIOS
                 </Nav.Link>
                 <Nav.Link
+                id="title"
                   onClick={() => navigate("/lentes/0")}
                 >
                   LENTES
