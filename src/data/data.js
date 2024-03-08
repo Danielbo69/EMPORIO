@@ -42,7 +42,7 @@ export const infoEmpresa = [
       },
       {
         title: "PUENTE ALTO",
-        description: "pendiente información",
+        description: "Puente Alto, Balmaceda 371, edf. Cordillera, oficina 308",
       },
     ],
     imgCentral: ImgCenter,
