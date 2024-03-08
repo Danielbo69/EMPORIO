@@ -1,9 +1,9 @@
-import ImgCenter from "../assets/img/Yellow.jpg";
-import carouselImg from "../assets/img/carousel.jpg";
-import carouselImg1 from "../assets/img/carousel1.jpg";
-import carouselImg2 from "../assets/img/carousel3.jpg";
-import carouselImg3 from "../assets/img/carousel4.jpg";
-import carouselImg4 from "../assets/img/carousel0.jpg";
+import ImgCenter from "../assets/img/Yellow-min.jpg";
+import carouselImg from "../assets/img/carousel-min.jpg";
+import carouselImg1 from "../assets/img/carousel1-min.jpg";
+import carouselImg2 from "../assets/img/carousel3-min.jpg";
+import carouselImg3 from "../assets/img/carousel4-min.jpg";
+import carouselImg4 from "../assets/img/carousel0-min.jpg";
 import ImageTreatments from "../assets/img/Capa1.png";
 import ImageTreatments1 from "../assets/img/Capa2.png";
 import ImageTreatments2 from "../assets/img/Capa3.png";
@@ -12,10 +12,19 @@ import ImageTreatments4 from "../assets/img/Capa5.png";
 import ImageTreatments5 from "../assets/img/Capa6.png";
 import ImageTreatments6 from "../assets/img/Capa7.png";
 import ImageTreatments7 from "../assets/img/Capa8.png";
+import ImagePhotos from "../assets/img/image00001.jpeg";
+import ImagePhotos2 from "../assets/img/image00003.jpeg";
+import ImagePhotos4 from "../assets/img/image00005.jpeg";
+import ImagePhotos5 from "../assets/img/image00006.jpeg";
+import ImagePhotos8 from "../assets/img/image00009.jpeg";
+import ImagePhotos9 from "../assets/img/image00010.jpeg";
+import ImagePhotos12 from "../assets/img/image00013.jpeg";
+import ImagePhotos13 from "../assets/img/image00014.jpeg";
+import ImagePhotos14 from "../assets/img/image00015.jpeg";
 
 export const infoEmpresa = [
   {
-    title: 'SOBRE NOSOTROS',
+    title: "SOBRE NOSOTROS",
     description:
       "Emporio, un laboratorio óptico de destacado, ha experimentado un impresionante crecimiento a lo largo de los años, posicionándose como un referente en su industria. Su firme compromiso con la sostenibilidad y la calidad de sus productos, respaldado por la tecnología free form, lo ha convertido en un referente destacado en el sector. El nivel profesional de sus colaboradores es excepcional, respaldando la reputación de Emporio como un lugar donde la innovación y la excelencia en soluciones ópticas se combinan para satisfacer las necesidades más exigentes de los clientes.",
     vision:
@@ -50,30 +59,31 @@ export const services = [
     id: 1,
     title: "MONTAJE",
     description:
-      "Para todo tipo de monturas, con equipos 100% automatizados lo cual proporciona el mejor acabado y ajuste de los cristales en la montura seleccionada por el paciente. Todo el proceso de montaje es verificado de forma permanente por nuestros ópticos, así garantizamos la calidad del producto. Además, podemos reducir el tiempo de espera para entregar los lentes acabados y la reparación de cristales o monturas.",
+      "Contamos con la última tecnología en nuestro laboratorio óptico, vanguardista y capaz de producir lentes de alta calidad de manera eficiente,elevando los estándares de fabricación, como lo seria la ES-CURVE que con su interfaz intuitiva y su proceso automatizado garantizan una producción sin errores y un tiempo de entrega más rápido para nuestros clientes. Todo el proceso de montaje es verificado de forma permanente por nuestros equipo de montaje, de esta manera garantizamos la calidad del producto. Además, podemos reducir el tiempo de espera para entregar los lentes acabados y la reparación de cristales o monturas.",
   },
   {
     id: 2,
-    title: "STOCK ",
-    description: "",
+    title: "STOCK",
+    description:
+      "En nuestro laboratorio óptico, contamos con una amplia gama de cristales de stock listos para satisfacer tus necesidades de visión de inmediato.Con opciones para todas necesidades, estamos aquí para asegurarnos de que veas el mundo con claridad desde el primer momento. En lugar de esperar días o semanas para recibir tus trabajos ,ofrecemos el servicio de entrega de stock junto al montaje y de esta manera optimizar tus servicios de entrega.",
   },
   {
     id: 3,
     title: "CLARITY VISION",
     description:
-      "Recubrimientos de lentes: aunque son prácticamente invisibles, hacen de un par de lentes una herramienta eficaz. Tanto si se trata de una dura capa para proteger la lente de arañazos o un recubrimiento antideslumbrante especial que reduce los reflejos molestos, estos recubrimientos pueden mejorar mucho su confort visual, hacer que la limpieza de los lentes sea más fácil e incluso garantizar que sus gafas duren más tiempo. En particular, los lentes de plástico con un recubrimiento para protección de arañazos puede hacer que los lentes sean mucho más resistentes a este tipo de daños. En la actualidad, existen tratamientos modernos para los lentes que incluyen un filtro para la luz azul UV y que puede ayudarle a proteger sus ojos en cualquier situación, p. ej. cuando pasa muchas horas frente a la pantalla del computador.",
+      "¿Alguna vez has experimentado los molestos reflejos en tus lentes que dificultan tu visión? ¡No estás solo! Muchos de nosotros enfrentamos este desafío diariamente, especialmente al conducir de noche o trabajar frente a una pantalla. Es por eso que en nuestro laboratorio óptico, estamos entusiasmados de ofrecerte nuestra capa antirreflejo Clarity la solución perfecta: la doble capa antirreflejo para tus cristales ópticos. ¿Qué hace que la doble capa antirreflejo sea tan especial? ¡Permítenos explicarte! Eliminación de reflejos molestos: La doble capa antirreflejo reduce significativamente los reflejos molestos en tus lentes, lo que te permite ver con claridad en todo momento. Ya no tendrás que preocuparte por esos destellos incómodos al mirar una pantalla o conducir de noche. Mejora de la claridad visual: Al eliminar los reflejos, la doble capa antirreflejo mejora la calidad de tu visión. Experimentarás colores más vibrantes y detalles más nítidos en tu entorno, lo que te permitirá disfrutar de una visión más clara y confortable en todas tus actividades diarias. Protección adicional: Además de mejorar tu visión, la doble capa antirreflejo también proporciona una capa de protección adicional para tus lentes. Ayuda a prevenir arañazos y manchas, prolongando así la vida útil de tus cristales. En resumen, la doble capa antirreflejo es una opción imprescindible para aquellos que buscan una visión clara y sin distracciones. En nuestro laboratorio óptico, estamos comprometidos a brindarte la mejor calidad y tecnología en tus lentes, para que puedas ver el mundo con la claridad que te mereces.",
   },
   {
     id: 4,
     title: "TEÑIDO SOLIDO O DEGRADE",
     description:
-      "Este tratamiento consiste en el teñido de las lentes que pueden ser orgánicas y/o de policarbonato. Dependiendo del material elegido existe a su disposición una gran variedad de colores y diferentes intensidades.",
+      "En el mundo de la óptica, la personalización es clave. Después de todo, nuestros lentes no solo son herramientas para mejorar nuestra visión, sino también una expresión de nuestro estilo y personalidad. Es por eso que en nuestro laboratorio óptico, estamos emocionados de ofrecerte un servicio que te permite llevar esa personalización al siguiente nivel: ¡el teñido de cristales ópticos graduados!Estilo personalizado: Con el teñido de lentes, tienes la libertad de elegir el color que mejor se adapte a tu estilo y preferencias personales. Desde tonos vibrantes hasta opciones más sutiles, las posibilidades son infinitas.Protección adicional: Además de agregar estilo, el teñido de lentes también puede proporcionar una capa adicional de protección contra los rayos UV. Algunos tintes están diseñados para bloquear cierta cantidad de luz azul dañina, lo que puede ayudar a proteger tus ojos de la fatiga visual y otros problemas relacionados con la exposición prolongada a pantallas digitales.Versatilidad: Con el teñido de lentes, puedes ofrecerle a tus clientes un cambio de estiloSimplemente visita nuestro laboratorio óptico y teñiremos tus lentes con el color de tu elección.",
   },
   {
     id: 5,
     title: "PRISMA",
     description:
-      "Un prisma en los lentes oftálmicos es un dispositivo óptico que desvía la luz en diferentes direcciones. Se utiliza en la corrección de problemas de visión relacionados con la desviación ocular, como el estrabismo. Los prismas se incorporan en los lentes oftálmicos para ayudar a alinear los ojos y mejorar la visión binocular.",
+      "En el mundo de la óptica, a menudo nos centramos en la corrección de la miopía, la hipermetropía y el astigmatismo. Sin embargo, hay otro elemento importante que a menudo pasamos por alto: el prisma óptico. En nuestro laboratorio óptico Emporio, estamos emocionados de ofrecerte un servicio que puede cambiar tu perspectiva sobre la visión: ¡el prisma óptico! ¿Qué es el prisma óptico y por qué es importante? El prisma óptico es una herramienta utilizada en la corrección de trastornos binoculares, como la heteroforia y la heterotropía. Estos trastornos afectan la alineación de los ojos y pueden provocar problemas de visión, como la visión doble o la fatiga ocular. El prisma óptico ayuda a corregir estos problemas desviando la luz de manera controlada, permitiendo que los ojos se enfoquen correctamente en un solo punto. Beneficios del prisma óptico: Corrección de problemas binoculares: El prisma óptico es esencial para corregir trastornos binoculares que afectan la alineación de los ojos y la coordinación de los músculos oculares. Esto ayuda a reducir la fatiga visual y mejora la calidad de la visión en situaciones cotidianas. Prevención de la visión doble: Para las personas que experimentan visión doble debido a problemas de alineación ocular, el prisma óptico puede ser una solución efectiva. Al desviar la luz de manera controlada, el prisma ayuda a fusionar las imágenes y eliminar la visión doble. Mejora del rendimiento visual: Al corregir problemas binoculares, el prisma óptico puede mejorar la capacidad de enfoque y la percepción visual. Esto puede ser especialmente útil para actividades que requieren una visión precisa, como la lectura, la conducción y el uso de dispositivos digitales.",
   },
 ];
 
@@ -177,7 +187,7 @@ export const glasses = [
   {
     id: "4",
     title: "ESPECIALIDADES",
-    image: carouselImg4,
+    image: "",
     description:
       "Especialidades que tenemos directamentes desde Emporio para ti.",
     subData: [
@@ -244,59 +254,71 @@ export const tecnology = [
 
 export const treatments = [
   {
-    id: '0',
+    id: "0",
     title: "PROTECCIÓN U.V.",
     description:
       "Las lentes Novar protegen sus ojos de los nocivos rayos ultravioletas que emite el sol.",
     image: ImageTreatments,
   },
   {
-    id: '1',
+    id: "1",
     title: "PROTECCIÓN BLUE TECH",
     description:
       "Adicione la exclusiva “dual blue cut protection”, que inhibe la nociva luz azul-violeta que puede provocar DME y daño prolongado a la retina.",
     image: ImageTreatments2,
   },
   {
-    id: '2',
+    id: "2",
     title: "TRANSPARENCIA",
     description:
       "Con su tratamiento anti-reflejo DURAX PROTECT en cámara de alto vacío, las lentes Novar son 100% transparentes.",
     image: ImageTreatments6,
   },
   {
-    id: '3',
+    id: "3",
     title: "ANTI-RAYAS",
     description:
       "Máxima protección anti-rayas por su exclusivo tratamiento PETRA. Sus lentes tendrán una mejor calidad de visión y mayor durabilidad por más tiempo",
     image: ImageTreatments3,
   },
   {
-    id: '4',
+    id: "4",
     title: "HIDRO/FOBICO",
     description:
       "Contienen mejores propiedades hidrofóbicas, oleofóbicas y antiestáticas para tenerlas siempre más limpias.",
     image: ImageTreatments4,
   },
   {
-    id: '5',
+    id: "5",
     title: "FOTOSENSIBLE",
     description:
       "Tecnología adicional para que sus lentes se adapten instantáneamente a los distintos ambientes por cambios de luz. Claras y transparentes en ambientes internos y oscuras ante la exposición del sol",
     image: ImageTreatments5,
   },
   {
-    id: '6',
+    id: "6",
     title: "ANTI-DESLUMBRANTES",
     description:
       "El polarizado Adventra atenúa los reflejos de aquello que pueda deslumbrar al ojo provocado por reflejantes. Ideal para actividades al aire libre.",
     image: ImageTreatments7,
   },
   {
-    id: '7',
+    id: "7",
     title: "ULTRADELGADOS",
     description:
       "Disponibles en materiales delgados y ultradelgados para reducir los espesores de borde hasta 40%",
     image: ImageTreatments1,
   },
+];
+
+export const photos = [
+  ImagePhotos,
+  ImagePhotos4,
+  ImagePhotos2,
+  ImagePhotos5,
+  ImagePhotos8,
+  ImagePhotos9,
+  ImagePhotos12,
+  ImagePhotos13,
+  ImagePhotos14,
 ];

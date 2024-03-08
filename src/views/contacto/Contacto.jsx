@@ -38,7 +38,7 @@ function Contacto() {
       Swal.fire({
         icon: "error",
         title: "Algo anda mal!",
-        text: "Todavia hay campos vacios",
+        text: "Todavia hay campos vacios 😅",
       });
     } else {
       emailjs
@@ -63,7 +63,7 @@ function Contacto() {
                 icon: "success",
                 position: "top-end",
                 title: "¡CORREO ENVIADO!",
-                text: "Nos contactaremos contigo en breve",
+                text: "Nos contactaremos contigo en breve 👋🏻",
               });
             }
           },

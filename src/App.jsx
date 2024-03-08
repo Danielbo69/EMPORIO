@@ -1,24 +1,23 @@
+import React, { Suspense } from "react";
 import "./App.css";
-import Router from "./routes/Router";
+import useNearScreen from "./hooks/useNearScreen";
 import Spinner from "./components/spinner/Spinner";
-import { useState } from "react";
+
+const Router = React.lazy(() => import("./routes/Router"));
 
 function App() {
-  const [spinner, setSpinner] = useState(true);
 
-  setTimeout(function () {
-    setSpinner(false);
-  }, 5000);
+  const { isNearScreen, fromRef } = useNearScreen({
+    distance: "0px",
+  });
 
-  if (!spinner) {
-    return (
-      <div className="app">
-        <Router />
-      </div>
-    );
-  } else {
-    return <Spinner />;
-  }
+  return (
+    <div className="app" ref={fromRef}>
+      <Suspense fallback={<Spinner />}>
+        {isNearScreen ? <Router /> : <Spinner />}
+      </Suspense>
+    </div>
+  );
 }
 
 export default App;

@@ -2,8 +2,7 @@ import { useState } from "react";
 import "./Treatments.css";
 import Container from "../../components/container/Container";
 import ModalView from "../../components/Modal/Modal";
-
-import Buttons from "../../components/buttons/Buttons";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Treatments({ treatments }) {
   const [show, setShow] = useState(false);
@@ -29,7 +28,7 @@ function Treatments({ treatments }) {
         )}
         {treatments.map((treatments) => (
           <div key={treatments.title} data-aos="zoom-in">
-            <img
+            <LazyLoadImage
               onClick={() => showModal(treatments)}
               src={treatments.image}
               alt={treatments.title}

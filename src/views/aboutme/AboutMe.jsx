@@ -8,6 +8,7 @@ import whoareTitle from "../../assets/img/Body Text.png";
 import imgUbi from "../../assets/img/Duplicate.png";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import ModalView from "../../components/Modal/Modal";
+import {LazyLoadImage} from "react-lazy-load-image-component"
 
 function AboutMe({ infoEmpresa }) {
   const [show, setShow] = useState(false);
@@ -49,7 +50,7 @@ function AboutMe({ infoEmpresa }) {
                 ))}
               </div>
               <div className="d-lg-flex d-none col-md imgUbicacion">
-                <img src={imgUbi} alt={imgUbi} />
+                <LazyLoadImage src={imgUbi} alt={imgUbi} />
               </div>
             </div>
             <div className="col-md imagen">
@@ -64,7 +65,7 @@ function AboutMe({ infoEmpresa }) {
             </div>
             <div className="infoAbout col-md mx-lg-2 " data-aos="fade-down">
               <div className="title">
-                <img
+                <LazyLoadImage
                   className="w-100 h-auto"
                   
                   src={titleAbout}
@@ -73,7 +74,7 @@ function AboutMe({ infoEmpresa }) {
               </div>
               <div className="descriptionAbout" id="description">
                 <div className="whoare">
-                  <img className="w-100" src={whoareTitle} alt={whoareTitle} />
+                  <LazyLoadImage className="w-100" src={whoareTitle} alt={whoareTitle} />
                 </div>
                 <div className="whoareinfo">
                   <p>{info.description}</p>
