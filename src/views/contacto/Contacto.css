@@ -74,8 +74,8 @@
 
 .btn-contact {
     width: 100%;
-    border: 1px solid #ffc700;
-    background-color: transparent;
+    border: none;
+    background-color: #ffc700;
     color: #fff;
     height: 40px;
     width: 100%;
@@ -83,9 +83,7 @@
 }
 
 .btn-contact:hover {
-    border: 1px solid #ffc700;
-    background-color: #ffc800;
-    color: #fff;
+    background-color: #d7a900;
 }
 
 button:focus:not(:focus-visible) {
