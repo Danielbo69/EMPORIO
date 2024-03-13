@@ -131,7 +131,7 @@ function InfoAndContact() {
           <div className="row">
             <div className="col-md mb-2">
               <div className="d-flex">
-                <IoMdMail fontSize={20} />
+                <IoMdMail fontSize={25} />
                 <p className="mx-2" id="description">
                   ventasemporiolab@gmail.com
                 </p>
@@ -152,7 +152,7 @@ function Footer() {
       <SocialMedia />
       <div className="d-flex justify-content-center align-items-center">
         <label id="title">
-          Copyright © 2024 - {newYear} &nbsp;{" "}
+           © 2024 - {newYear} &nbsp;{" "}
           <strong style={{ color: "#ffc700" }}>|</strong>
           &nbsp; Emporio - Todos los derechos reservados
         </label>
