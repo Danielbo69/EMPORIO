@@ -1,10 +1,10 @@
 .header {
   height: 100vh;
-  background-image: url("../../assets/img/fondo7-min.jpg");
-  background-attachment: fixed !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
+  background-image: url("../../assets/img/fondo7.jpg");
+  background-attachment: fixed;
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 }
 
