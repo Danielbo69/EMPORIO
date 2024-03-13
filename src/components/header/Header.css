@@ -1,15 +1,10 @@
 .header {
   height: 100vh;
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
   background-image: url("../../assets/img/fondo7-min.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 }
 
@@ -24,6 +19,9 @@
 }
 
 @media (max-width: 460px) {
+  .header {
+    height: 100%;
+  }
   .contentHeader img {
     width: 300px;
   }

@@ -14,14 +14,18 @@
     text-align: justify;
 }
 
-.contact-footer .ubicacion {
+.footer-icons .icons {
+    opacity: 0.5;
+    color: #fff;
+}
+
+.footer-icons .icons:hover {
+    opacity: 1;
+    transform: translateY(-4%);
 }
 
 @media (max-width: 460px) {
     .footer label {
         font-size: 10px;
-    }
-    .contact-footer .ubicacion {
-        justify-content: left;
     }
 }
