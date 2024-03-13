@@ -6,6 +6,7 @@ import {
   FaFacebookSquare,
   FaInstagram,
   FaPhoneAlt,
+  FaMapPin,
 } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
@@ -56,15 +57,15 @@ function InfoAndContact() {
   const phones = [
     {
       name: "MONEDA 772",
-      phone: "(+56)956145574",
+      phone: "(+56) 9 5614 5574",
     },
     {
       name: "MACIVER 180",
-      phone: "(+56)949286172",
+      phone: "(+56) 9 4928 6172",
     },
     {
       name: "PUENTE ALTO",
-      phone: "(+56)922199009",
+      phone: "(+56) 9 2219 9009",
     },
   ];
 
@@ -94,19 +95,32 @@ function InfoAndContact() {
         <div className="col-md-6 col-md px-4 contact-footer">
           <h3 id="title">CONTACTO</h3>
           <br />
+          <div className="row">
+            <div className="col-md mb-2">
+              <div className="d-flex">
+                <FaMapMarkerAlt fontSize={20} />
+                <p className="mx-2" id="description">
+                  Santiago de Chile
+                </p>
+              </div>
+            </div>
+          </div>
           <div className="d-flex">
             <div className="row">
               {phones.map((phone, index) => (
-                <div className="col-md 6" key={index}>
+                <div
+                  className="col-md-6 mb-3 d-sm-block d-flex justify-content-between align-items-center"
+                  key={index}
+                >
                   <div className="d-flex">
-                    <FaMapMarkerAlt fontSize={20} />
-                    <p className="mx-1" id="description">
-                      {phone.name},
+                    <FaMapPin fontSize={20} />
+                    <p className="mx-2" id="description">
+                      {phone.name}
                     </p>
                   </div>
                   <div className="d-flex">
                     <FaPhoneAlt fontSize={20} />
-                    <p className="mx-1" id="description">
+                    <p className="mx-2" id="description">
                       {phone.phone}
                     </p>
                   </div>
@@ -115,10 +129,10 @@ function InfoAndContact() {
             </div>
           </div>
           <div className="row">
-            <div className="col-md">
+            <div className="col-md mb-2">
               <div className="d-flex">
                 <IoMdMail fontSize={20} />
-                <p className="mx-1" id="description">
+                <p className="mx-2" id="description">
                   ventasemporiolab@gmail.com
                 </p>
               </div>
@@ -138,7 +152,8 @@ function Footer() {
       <SocialMedia />
       <div className="d-flex justify-content-center align-items-center">
         <label id="title">
-          Copyright © 2024 - {newYear} &nbsp; <strong style={{color: '#ffc700'}}>|</strong>
+          Copyright © 2024 - {newYear} &nbsp;{" "}
+          <strong style={{ color: "#ffc700" }}>|</strong>
           &nbsp; Emporio - Todos los derechos reservados
         </label>
       </div>
