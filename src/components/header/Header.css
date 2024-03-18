@@ -2,7 +2,7 @@
   height: 100vh;
   background-image: url("../../assets/img/carousel0-min.jpg");
   /* background-attachment: fixed; */
-  /* background-position: bottom; */
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
