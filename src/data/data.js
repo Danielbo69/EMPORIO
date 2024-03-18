@@ -187,7 +187,7 @@ export const glasses = [
   {
     id: "4",
     title: "ESPECIALIDADES",
-    image: "",
+    image: carouselImg4,
     description:
       "Especialidades que tenemos directamentes desde Emporio para ti.",
     subData: [

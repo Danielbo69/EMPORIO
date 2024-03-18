@@ -1,15 +1,15 @@
 .header {
   height: 100vh;
   background-image: url("../../assets/img/fondo7.jpg");
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 }
 
 .contentHeader {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -19,9 +19,6 @@
 }
 
 @media (max-width: 460px) {
-  .header {
-    height: 100%;
-  }
   .contentHeader img {
     width: 300px;
   }
