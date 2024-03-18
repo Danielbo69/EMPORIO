@@ -2,6 +2,7 @@
   height: 100vh;
   background-image: url("../../assets/img/fondo7.jpg");
   /* background-attachment: fixed; */
+  overflow: scroll;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
