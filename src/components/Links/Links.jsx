@@ -41,7 +41,7 @@ function Links() {
           <Tooltip id="overlay-example" {...props}>
             <div className="d-flex">
               <span style={{ textAlign: "left" }}>
-                ¡Escríbenos para más información!
+                ¡Toma tú solicitud en línea!
               </span>
               <div className="icon-close">
                 <span onClick={() => setShowTooltip(false)}>
