@@ -2,14 +2,14 @@ import { Routes, Route } from "react-router-dom";
 import NavMenu from "../components/navbar/Navbar";
 import Home from "../views/home/Home";
 import ViewServicios from "../views/servicios/viewServicios/ViewServicios";
-import Whatsapp from "../components/whatsapp/Whatsapp";
+import Links from "../components/Links/Links";
 import ViewGlasses from "../views/glasses/viewGlasses/ViewGlasses";
 
 function Router() {
   return (
     <>
     <NavMenu />
-    <Whatsapp />
+    <Links />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/servicios/:id" element={<ViewServicios />} />
