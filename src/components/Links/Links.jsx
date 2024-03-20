@@ -40,7 +40,7 @@ function Links() {
         {(props) => (
           <Tooltip id="overlay-example" {...props}>
             <div className="d-flex">
-              <span style={{ textAlign: "left" }}>
+              <span style={{ textAlign: "left", width: '100%' }}>
                 ¡Toma tú solicitud en línea!
               </span>
               <div className="icon-close">
